@@ -41,8 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AreaInfoDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlHelper.cs" />
+    <Compile Include="UserInfoDal.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UFSM_Model\UFSM_Model.csproj">
+      <Project>{e453b438-b6b9-4618-9a8c-6dae35517995}</Project>
+      <Name>UFSM_Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

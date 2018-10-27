@@ -41,6 +41,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserInfoService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UFSM_DataAccessLayer\UFSM_DataAccessLayer.csproj">
+      <Project>{f9c04e63-00ef-4e02-9ddc-e13840ad927f}</Project>
+      <Name>UFSM_DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UFSM_Model\UFSM_Model.csproj">
+      <Project>{e453b438-b6b9-4618-9a8c-6dae35517995}</Project>
+      <Name>UFSM_Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
