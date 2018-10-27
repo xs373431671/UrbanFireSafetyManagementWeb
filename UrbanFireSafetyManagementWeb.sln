@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrbanFireSafetyManagementWeb", "UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb.csproj", "{BBA45A17-A828-417D-9800-D9FD09C51845}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UFSM_Model", "UFSM_Model\UFSM_Model.csproj", "{E453B438-B6B9-4618-9A8C-6DAE35517995}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UFSM_DataAccessLayer", "UFSM_DataAccessLayer\UFSM_DataAccessLayer.csproj", "{F9C04E63-00EF-4E02-9DDC-E13840AD927F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UFSM_BusinessLogicLayer", "UFSM_BusinessLogicLayer\UFSM_BusinessLogicLayer.csproj", "{9B304856-E65F-4F21-87FB-93FED9F13BC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UFSM_Tool", "UFSM_Tool\UFSM_Tool.csproj", "{63A058B3-D4D0-4C5E-A6D2-709656D54D4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBA45A17-A828-417D-9800-D9FD09C51845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBA45A17-A828-417D-9800-D9FD09C51845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBA45A17-A828-417D-9800-D9FD09C51845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBA45A17-A828-417D-9800-D9FD09C51845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E453B438-B6B9-4618-9A8C-6DAE35517995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E453B438-B6B9-4618-9A8C-6DAE35517995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E453B438-B6B9-4618-9A8C-6DAE35517995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E453B438-B6B9-4618-9A8C-6DAE35517995}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9C04E63-00EF-4E02-9DDC-E13840AD927F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9C04E63-00EF-4E02-9DDC-E13840AD927F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9C04E63-00EF-4E02-9DDC-E13840AD927F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9C04E63-00EF-4E02-9DDC-E13840AD927F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B304856-E65F-4F21-87FB-93FED9F13BC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B304856-E65F-4F21-87FB-93FED9F13BC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B304856-E65F-4F21-87FB-93FED9F13BC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B304856-E65F-4F21-87FB-93FED9F13BC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63A058B3-D4D0-4C5E-A6D2-709656D54D4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63A058B3-D4D0-4C5E-A6D2-709656D54D4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63A058B3-D4D0-4C5E-A6D2-709656D54D4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63A058B3-D4D0-4C5E-A6D2-709656D54D4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
