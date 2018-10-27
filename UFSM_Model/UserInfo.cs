@@ -17,6 +17,6 @@ namespace UFSM_Model
         public string Password { get; set; }
         public string Email { get; set; }
         public string Telephone { get; set; }        
-        public string TestGitHub2000{get;set;}
+        public string TestGitHub123{get;set;}
     }
 }
