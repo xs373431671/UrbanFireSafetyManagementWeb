@@ -1,0 +1,4 @@
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_Tool\bin\Debug\UFSM_Tool.dll
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_Tool\bin\Debug\UFSM_Tool.pdb
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_Tool\obj\Debug\UFSM_Tool.dll
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_Tool\obj\Debug\UFSM_Tool.pdb
