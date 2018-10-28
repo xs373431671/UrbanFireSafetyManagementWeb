@@ -8,165 +8,165 @@ namespace UFSM_Model
 {
     public class AreaInfo
     {
-        private int id;
-        private int areaNum;
-        private int attribute;
-        private int popQuality;
-        private int buildingFireResistanceRating;
-        private int popDensity;
-        private int buildingYears;
-        private int fireSafetyPropaganda;
-        private int powerLineLoad;
-        private int fireSafetyManagement;
-        private int agingOfPowerLines;
-        private int fireInspectionOfKeyBuildings;
-        private int timeFactor;
-        private int economicDensity;
-        private int highBuildingsNum;
-        private int undergroundCrowdedSpace;
-        private int densityOfKeyBuildings;
-        private int roadCongestion;
-        private int buildingDensity;
-        private int distributionOfInflammableStorage;
-        private int fireStationCapacityCoverage;
-        private int fireStationEquipment;
-        private int publicFireFacilities;
-        private int departmentalEmergencyResponse;
-        private int fireAndRescuePlan;
-        private int keyBuildingsFirePreventBuilt;
+        private uint id;
+        private uint areaNum;
+        private byte attribute;
+        private byte popQuality;
+        private byte buildingFireResistanceRating;
+        private byte popDensity;
+        private byte buildingYears;
+        private byte fireSafetyPropaganda;
+        private byte powerLineLoad;
+        private byte fireSafetyManagement;
+        private byte agingOfPowerLines;
+        private byte fireInspectionOfKeyBuildings;
+        private byte timeFactor;
+        private byte economicDensity;
+        private byte highBuildingsNum;
+        private byte undergroundCrowdedSpace;
+        private byte densityOfKeyBuildings;
+        private byte roadCongestion;
+        private byte buildingDensity;
+        private byte distributionOfInflammableStorage;
+        private byte fireStationCapacityCoverage;
+        private byte fireStationEquipment;
+        private byte publicFireFacilities;
+        private byte departmentalEmergencyResponse;
+        private byte fireAndRescuePlan;
+        private byte keyBuildingsFirePreventBuilt;
         private DateTime areaUploadTime;
-        private int areaAssessmentYear;
-        private int areaRiskGrade;
-        private int areaSize;
-        private int areaPop;
+        private uint areaAssessmentYear;
+        private byte areaRiskGrade;
+        private uint areaSize;
+        private uint areaPop;
 
-        public int ID
+        public uint ID
         {
             get { return id; }
             set { if (value < 0 || value > 100) { value = 0; } else { id = value; } }
         }
 
-        public int AreaNum
+        public uint AreaNum
         {
             get { return areaNum; }
             set { if (value < 0 || value > 100) { value = 0; } else { areaNum = value; } }
         }
-        public int Attribute
+        public byte Attribute
         {
             get { return attribute; }
             set { if (value < 0 || value > 100) { value = 0; } else { attribute = value; } }
         }
-        public int PopQuality
+        public byte PopQuality
         {
             get { return popQuality; }
             set { if (value < 0 || value > 100) { value = 0; } else { popQuality = value; } }
         }
-        public int BuildingFireResistanceRating
+        public byte BuildingFireResistanceRating
         {
             get { return buildingFireResistanceRating; }
             set { if (value < 0 || value > 100) { value = 0; } else { buildingFireResistanceRating = value; } }
         }
-        public int PopDensity
+        public byte PopDensity
         {
             get { return popDensity; }
             set { if (value < 0 || value > 100) { value = 0; } else { popDensity = value; } }
         }
-        public int BuildingYears
+        public byte BuildingYears
         {
             get { return buildingYears; }
             set { if (value < 0 || value > 100) { value = 0; } else { buildingYears = value; } }
         }
-        public int FireSafetyPropaganda
+        public byte FireSafetyPropaganda
         {
             get { return fireSafetyPropaganda; }
             set { if (value < 0 || value > 100) { value = 0; } else { fireSafetyPropaganda = value; } }
         }
-        public int PowerLineLoad
+        public byte PowerLineLoad
         {
             get { return powerLineLoad; }
             set { if (value < 0 || value > 100) { value = 0; } else { powerLineLoad = value; } }
         }
-        public int FireSafetyManagement
+        public byte FireSafetyManagement
         {
             get { return fireSafetyManagement; }
             set { if (value < 0 || value > 100) { value = 0; } else { fireSafetyManagement = value; } }
         }
-        public int AgingOfPowerLines
+        public byte AgingOfPowerLines
         {
             get { return agingOfPowerLines; }
             set { if (value < 0 || value > 100) { value = 0; } else { agingOfPowerLines = value; } }
         }
-        public int FireInspectionOfKeyBuildings
+        public byte FireInspectionOfKeyBuildings
         {
             get { return fireInspectionOfKeyBuildings; }
             set { if (value < 0 || value > 100) { value = 0; } else { fireInspectionOfKeyBuildings = value; } }
         }
-        public int TimeFactor
+        public byte TimeFactor
         {
             get { return timeFactor; }
             set { if (value < 0 || value > 100) { value = 0; } else { timeFactor = value; } }
         }
-        public int EconomicDensity
+        public byte EconomicDensity
         {
             get { return economicDensity; }
             set { if (value < 0 || value > 100) { value = 0; } else { economicDensity = value; } }
         }
-        public int HighBuildingsNum
+        public byte HighBuildingsNum
         {
             get { return highBuildingsNum; }
             set { if (value < 0 || value > 100) { value = 0; } else { highBuildingsNum = value; } }
         }
-        public int UndergroundCrowdedSpace
+        public byte UndergroundCrowdedSpace
         {
             get { return undergroundCrowdedSpace; }
             set { if (value < 0 || value > 100) { value = 0; } else { undergroundCrowdedSpace = value; } }
         }
-        public int DensityOfKeyBuildings
+        public byte DensityOfKeyBuildings
         {
             get { return densityOfKeyBuildings; }
             set { if (value < 0 || value > 100) { value = 0; } else { densityOfKeyBuildings = value; } }
         }
-        public int RoadCongestion
+        public byte RoadCongestion
         {
             get { return roadCongestion; }
             set { if (value < 0 || value > 100) { value = 0; } else { roadCongestion = value; } }
         }
-        public int BuildingDensity
+        public byte BuildingDensity
         {
             get { return buildingDensity; }
             set { if (value < 0 || value > 100) { value = 0; } else { buildingDensity = value; } }
         }
-        public int DistributionOfInflammableStorage
+        public byte DistributionOfInflammableStorage
         {
             get { return distributionOfInflammableStorage; }
             set { if (value < 0 || value > 100) { value = 0; } else { distributionOfInflammableStorage = value; } }
         }
-        public int FireStationCapacityCoverage
+        public byte FireStationCapacityCoverage
         {
             get { return fireStationCapacityCoverage; }
             set { if (value < 0 || value > 100) { value = 0; } else { fireStationCapacityCoverage = value; } }
         }
-        public int FireStationEquipment
+        public byte FireStationEquipment
         {
             get { return fireStationEquipment; }
             set { if (value < 0 || value > 100) { value = 0; } else { fireStationEquipment = value; } }
         }
-        public int PublicFireFacilities
+        public byte PublicFireFacilities
         {
             get { return publicFireFacilities; }
             set { if (value < 0 || value > 100) { value = 0; } else { publicFireFacilities = value; } }
         }
-        public int DepartmentalEmergencyResponse
+        public byte DepartmentalEmergencyResponse
         {
             get { return departmentalEmergencyResponse; }
             set { if (value < 0 || value > 100) { value = 0; } else { departmentalEmergencyResponse = value; } }
         }
-        public int FireAndRescuePlan
+        public byte FireAndRescuePlan
         {
             get { return fireAndRescuePlan; }
             set { if (value < 0 || value > 100) { value = 0; } else { fireAndRescuePlan = value; } }
         }
-        public int KeyBuildingsFirePreventBuilt
+        public byte KeyBuildingsFirePreventBuilt
         {
             get { return keyBuildingsFirePreventBuilt; }
             set { if (value < 0 || value > 100) { value = 0; } else { keyBuildingsFirePreventBuilt = value; } }
@@ -176,17 +176,17 @@ namespace UFSM_Model
             get { return areaUploadTime; }
             set { areaUploadTime = value;  }
         }
-        public int AreaAssessmentYear
+        public uint AreaAssessmentYear
         {
             get { return areaAssessmentYear; }
             set { areaAssessmentYear = value;}
         }
-        public int AreaRiskGrade
+        public byte AreaRiskGrade
         {
             get { return areaRiskGrade; }
             set { if (value < 0 || value > 5) { value = 0; } else { areaRiskGrade = value; } }
         }
-        public int AreaSize{ get; set; }
-        public int AreaPop{ get; set; }
+        public uint AreaSize{ get; set; }
+        public uint AreaPop{ get; set; }
     }
 }

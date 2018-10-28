@@ -17,8 +17,9 @@ namespace UFSM_DataAccessLayer
         /// <param name="user">UserInfo对象</param>
         /// <param name="dr">DataRow对象</param>
         /// <returns></returns>
-        public UserInfo GetUserFromDataRow(UserInfo user,DataRow dr)
+        private UserInfo GetUserFromDataRow(DataRow dr)
         {
+            UserInfo user = new UserInfo();
             user.ID = Convert.ToInt32(dr["ID"]);
             user.Name = dr["Name"] != DBNull.Value ? dr["Name"].ToString() :"NULL";
             user.Authority = dr["Authority"] .ToString() ;
@@ -47,7 +48,7 @@ namespace UFSM_DataAccessLayer
                 UserInfo user = null;
                 foreach (DataRow dr in dt.Rows)
                 {
-                    user = GetUserFromDataRow(new UserInfo(), dr);
+                    user = GetUserFromDataRow(dr);
                     userList.Add(user);
                 }
             }
@@ -104,6 +105,26 @@ namespace UFSM_DataAccessLayer
                 }
             }          
             return null;             
+        }
+
+
+        /// <summary>
+        /// 通过Account值删除数据库对应用户
+        /// </summary>
+        /// <param name="account">账号字符串</param>
+        /// <returns></returns>
+        public bool DeleteUserInfo(string account)
+        {
+            string sql = "delete from UFSM_UserInfo where Account=@Account";
+            SqlParameter[] pars = { new SqlParameter("Account", account) };
+            if(SqlHelper.ExecuteNonQuery(sql,pars)>0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
             
