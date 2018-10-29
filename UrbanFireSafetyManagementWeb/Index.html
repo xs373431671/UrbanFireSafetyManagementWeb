@@ -12,22 +12,31 @@
     <link href="CSS/icon.css" rel="stylesheet" />
 
     <style type="text/css">
+        body
+        {
+           font-family:SimHei,'Times New Roman',KaiTi;  
+        }
+        .mainDiv
+        {   
+            width:450px;
+            margin:150px auto;      
+        }
+        table tr
+        {
+            line-height:30px;
+        }
         table
         {
             margin:auto auto;
             font-size:medium;
-            font-family:KaiTi;
-           
+            font-family:KaiTi;           
         }
-
         .yzmText
         {
             width:40px;
         }
-
         img
-        {
-            
+        {            
             width:60px;
             background-size:cover;
         }
@@ -65,14 +74,10 @@
 </head>
 <body>
     <div class="mainDiv">
-        <div class="easyui-panel" title="欢迎使用城市火灾安全管理系统V1.0" style="width:420px;">
-        
-                
+        <div class="easyui-panel" title="欢迎使用城市火灾安全管理系统V1.0" style="width:420px;">           
             <hr color=white width="90%" size="4" />
             <h1 style="font-family:'Microsoft YaHei UI';font-weight:bold;">城 市 火 灾 安 全 管 理 系 统</h1>
-            <hr color=white width="90%" size="4" />
-
-            
+            <hr color=white width="90%" size="4" />            
             <div style="padding:10px 60px 20px 50px">
                 <form id="signForm" method="post" action="SignIn.ashx">
                     
@@ -100,16 +105,8 @@
                             <td style="padding-left:2em;"><button class="button" style="margin-left:10px;">注&nbsp;&nbsp;&nbsp;&nbsp;册</button></td>
                         </tr>
                     </table>
-                    
-                   
-                
-                    
-                    
-                    
-                    
                 </form>
             </div>
-
         </div>
     </div>
 </body>

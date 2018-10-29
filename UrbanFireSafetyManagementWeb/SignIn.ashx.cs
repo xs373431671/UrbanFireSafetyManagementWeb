@@ -13,8 +13,6 @@ namespace UrbanFireSafetyManagementWeb
     /// </summary>
     public class SignIn : IHttpHandler, System.Web.SessionState.IRequiresSessionState
     {
-        public string Msg { get; set; }        //存储返回用户的信息         
-        public string UserName { get; set; }   //存储用户名
         public void ProcessRequest(HttpContext context)
         {
             context.Response.ContentType ="text/html";
@@ -60,7 +58,6 @@ namespace UrbanFireSafetyManagementWeb
 
             //判断用户名与密码
             UserInfo signUser = userInfoService.CheckUserInfo(user, out returnMessage);
-
             try
             {
                 if (signUser.ID > 0)
@@ -76,12 +73,8 @@ namespace UrbanFireSafetyManagementWeb
             catch
             {
                 context.Response.Write("<script>alert('" + "帐号或密码错误！" + "');window.location = 'Index.html';</script>");
-            }
-            
+            }           
          }
-
-
-
 
         public bool IsReusable
         {
