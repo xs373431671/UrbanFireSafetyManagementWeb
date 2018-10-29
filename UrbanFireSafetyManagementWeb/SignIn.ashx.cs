@@ -24,7 +24,7 @@ namespace UrbanFireSafetyManagementWeb
             }
             else
             {
-                context.Response.Write("<script>alert('验证码错误！');window.location = 'Index.html';></script>");
+                context.Response.Write("<script>alert('" + "验证码错误！" + "');window.location = 'Index.html';</script>");
             }
         }
 
@@ -66,16 +66,16 @@ namespace UrbanFireSafetyManagementWeb
                 if (signUser.ID > 0)
                 {
                     context.Session["userInfo"] = signUser;
-                    context.Response.Write("<script>alert('登录成功！');window.location = 's.html';></script>");
+                    context.Response.Write("<script>alert('" + "登录成功！" + "');window.location = 's.html';</script>");
                 }
                 else
                 {
-                    context.Response.Write("<script>alert('" + "帐号或密码错误!" + "');window.location = 'Index.html';></script>");
+                    context.Response.Write("<script>alert('" + "帐号或密码错误！" + "');window.location = 'Index.html';</script>");
                 }
             }
             catch
             {
-                context.Response.Write("<script>alert('帐号或密码错误!');window.location = 'Index.html';></script>");
+                context.Response.Write("<script>alert('" + "帐号或密码错误！" + "');window.location = 'Index.html';</script>");
             }
             
          }
