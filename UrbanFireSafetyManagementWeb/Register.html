@@ -17,7 +17,7 @@
 
         .mainDiv {
             width: 450px;
-            margin: 150px auto;
+            margin: 0px auto;
         }
 
         table tr {
@@ -53,6 +53,9 @@
         h1 {
             text-align: center;
         }
+        small{
+            color:red;
+        }
     </style>
     <script type="text/javascript">
 
@@ -66,6 +69,30 @@
                 //但是 IE 不会，所以要请求与上次请求不同的内容，加一个动态参数 d
                 document.getElementById("imgCode").src = "ValidateImageCode.ashx?d=" + new Date().getMilliseconds();
             };
+
+            $('#submit').click(function ()
+            {
+                var account = document.getElementById("account");
+                var password = document.getElementById("password");
+                var areaNum = document.getElementById("areaNum");
+                var telephone = document.getElementById("telephone");
+
+                if (account.value == null || password.value == null || areaNum.value == null || telephone.value == null)
+                {
+                    alert("必填项不能为空");
+                    return false;
+                }
+                if (account.value == 0 || password.value == 0 || areaNum.value == 0 || telephone.value == 0)
+                {
+                    alert("必填项不能为空");
+                    return false;
+                }
+                if (isNaN(areaNum.value))
+                {
+                    alert("地区编号项格式错误，填写示例：18");
+                    return false;
+                }
+            });
         };
     </script>
 </head>
@@ -76,19 +103,39 @@
             <h1 style="font-family:'Microsoft YaHei UI';font-weight:bold;">UrbanFireManagementRegister</h1>
             <hr color=white width="90%" size="4" />
             <div style="padding:10px 60px 20px 50px">
-                <form id="signForm" method="post" action="SignIn.ashx">
+                <form id="signForm" method="post" action="Register.ashx">
 
                     <table class="sineTable" border="0" cellspacing="5">
                         <tr>
-                            <td>帐&nbsp;&nbsp;号:</td>
-                            <td><input type="text" name="account" /></td>
+                            <td>帐&nbsp;&nbsp;&nbsp;&nbsp;号:</td>
+                            <td><input type="text" id="account" name="account" /><small>*</small></td>
                         </tr>
                         <tr>
-                            <td>密&nbsp;&nbsp;码:</td>
-                            <td><input type="password" name="password" /></td>
+                            <td>密&nbsp;&nbsp;&nbsp;&nbsp;码:</td>
+                            <td><input type="password" id="password" name="password" /><small>*</small></td>
                         </tr>
                         <tr>
-                            <td>验证码:</td>
+                            <td>本人姓名:</td>
+                            <td><input type="text" id="name" name="name"/></td>
+                        </tr>
+                        <tr>
+                            <td>负责地区编号:</td>
+                            <td><input type="text" id="areaNum" name="areaNum"  /><small>*</small></td>
+                        </tr>
+                        <tr>
+                            <td>本人单位信息:</td>
+                            <td><input type="text" name="department" /></td>
+                        </tr>
+                        <tr>
+                            <td>手&nbsp;&nbsp;&nbsp;&nbsp;机:</td>
+                            <td><input type="text" id="telephone" name="telephone" /><small>*</small></td>
+                        </tr>
+                        <tr>
+                            <td>电子邮箱:</td>
+                            <td><input type="text" name="email" /></td>
+                        </tr>
+                        <tr>
+                            <td>验&nbsp;证&nbsp;码:</td>
                             <td>
                                 <input type="text" name="yzm" class="yzmText" />
                                 <img src="ValidateImageCode.ashx" id="imgCode" align="top" />
@@ -98,10 +145,11 @@
                     </table>
                     <table cellspacing="5">
                         <tr>
-                            <td style="padding-right:2em;"><input class="button" type="submit" value="登    录" src="SignIn.ashx" /></td>
-                            <td style="padding-left:2em;"><button class="button" style="margin-left:10px;">注&nbsp;&nbsp;&nbsp;&nbsp;册</button></td>
-                        </tr>
+                            <td style="padding-right:2em;"><input id="submit" class="button" type="submit" value="提    交" src="Register.ashx" /></td>
+                            <td style="padding-left:2em;"><input class="button" type="button" value="返    回" style="margin-left:10px;" onclick="location.href='Index.html'"/></td>
+                        </tr>                        
                     </table>
+                    <p>提示：带*为必填项，此处为普通权限注册入口，系统会根据您填入的“负责地区编号”，为您分配对应的信息上传界面。如需注册超级管理员权限，请联系项目负责人！</p>
                 </form>
             </div>
         </div>

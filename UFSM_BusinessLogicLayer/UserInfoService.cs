@@ -28,7 +28,7 @@ namespace UFSM_BusinessLogicLayer
             {
                 if(user.Account==u.Account)
                 {
-                    returnMessage = "对不起，该账号名已被占用";
+                    returnMessage = "对不起，该账号名已被占用!";
                     return false;
                 }
             }
