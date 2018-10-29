@@ -94,11 +94,16 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS\icon.css" />
+    <Content Include="CSS\MainStyleSheet.css" />
     <Content Include="Index.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="s.html" />
+    <Content Include="ValidateImageCode.ashx" />
+    <Content Include="SignIn.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -107,12 +112,38 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="scripts\ai.0.22.9-build00167.js" />
-    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <None Include="scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="CSS\easyui.css" />
+    <Content Include="scripts\jquery-1.7.1.min.js" />
+    <Content Include="scripts\jquery.easyui.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignIn.ashx.cs">
+      <DependentUpon>SignIn.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ValidateImageCode.ashx.cs">
+      <DependentUpon>ValidateImageCode.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CSS\icons\" />
+    <Folder Include="CSS\images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UFSM_BusinessLogicLayer\UFSM_BusinessLogicLayer.csproj">
+      <Project>{9b304856-e65f-4f21-87fb-93fed9f13bc6}</Project>
+      <Name>UFSM_BusinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UFSM_Model\UFSM_Model.csproj">
+      <Project>{e453b438-b6b9-4618-9a8c-6dae35517995}</Project>
+      <Name>UFSM_Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UFSM_Tool\UFSM_Tool.csproj">
+      <Project>{63a058b3-d4d0-4c5e-a6d2-709656d54d4b}</Project>
+      <Name>UFSM_Tool</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

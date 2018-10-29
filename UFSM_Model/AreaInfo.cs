@@ -37,8 +37,7 @@ namespace UFSM_Model
         private DateTime areaUploadTime;
         private uint areaAssessmentYear;
         private byte areaRiskGrade;
-        private uint areaSize;
-        private uint areaPop;
+
 
         public uint ID
         {

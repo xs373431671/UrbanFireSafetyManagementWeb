@@ -31,3 +31,11 @@ D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UrbanFireSafetyManag
 D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\obj\Debug\UrbanFireSafetyManagementWeb.csprojResolveAssemblyReference.cache
 D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\obj\Debug\UrbanFireSafetyManagementWeb.dll
 D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\obj\Debug\UrbanFireSafetyManagementWeb.pdb
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\UFSM_BusinessLogicLayer.dll
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\UFSM_Tool.dll
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\UFSM_Model.dll
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\UFSM_DataAccessLayer.dll
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\UFSM_BusinessLogicLayer.pdb
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\UFSM_Tool.pdb
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\UFSM_Model.pdb
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\UFSM_DataAccessLayer.pdb

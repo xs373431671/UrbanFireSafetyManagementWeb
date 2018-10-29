@@ -57,18 +57,23 @@ namespace UFSM_BusinessLogicLayer
         /// <returns></returns>
         public UserInfo CheckUserInfo(UserInfo user, out string returnMessage)
         {
-            UserInfoDal uid = new UserInfoDal();
-            UserInfo sineInUser= uid.CheckUserInfo(user.Account, user.Password, userList);
-            if(sineInUser==null)
+            if (userList.Count > 0)
             {
-                returnMessage = "账号或用户名错误！";
-                return null; 
+                foreach (UserInfo u in userList)
+                {
+                    if (u.Account == user.Account && u.Password == user.Password)
+                    {
+                        returnMessage = "登录成功！";
+                        return u;
+                    }
+
+                }
             }
-            else
-            {
-                returnMessage = "登录成功";
-                return sineInUser;
-            }
+            returnMessage = "账号或用户名错误！";
+            return null;        
         }
+
+
+
     }
 }

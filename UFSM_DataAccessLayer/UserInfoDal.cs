@@ -88,27 +88,6 @@ namespace UFSM_DataAccessLayer
 
 
         /// <summary>
-        /// 登录检查：根据UserInfo对象的账号与密码，检查其是否存在于UserInfo集合中，返回对应的UserInfo对象。注意：如果数据库信息更新，要重新获取UserInfo集合（在业务层操作）。
-        /// </summary>
-        /// <param name="user"></param>
-        /// <returns></returns>
-        public UserInfo CheckUserInfo(string account,string password, List<UserInfo> userList)
-        {
-            if (userList.Count>0)
-            {
-                foreach(UserInfo u in userList)
-                {
-                    if(u.Account==account&&u.Password==password)
-                    {
-                        return u;
-                    }                   
-                }
-            }          
-            return null;             
-        }
-
-
-        /// <summary>
         /// 通过Account值删除数据库对应用户
         /// </summary>
         /// <param name="account">账号字符串</param>
