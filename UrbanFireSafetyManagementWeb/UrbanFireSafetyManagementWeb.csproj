@@ -95,12 +95,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSS\icon.css" />
-    <Content Include="CSS\MainStyleSheet.css" />
     <Content Include="Index.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Register.html" />
     <Content Include="s.html" />
     <Content Include="ValidateImageCode.ashx" />
     <Content Include="SignIn.ashx" />
