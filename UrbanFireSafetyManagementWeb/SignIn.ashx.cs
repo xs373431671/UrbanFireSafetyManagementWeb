@@ -63,7 +63,7 @@ namespace UrbanFireSafetyManagementWeb
                 if (signUser.ID > 0)
                 {
                     context.Session["userInfo"] = signUser;
-                    context.Response.Write("<script>alert('" + "登录成功！" + "');window.location = 's.html';</script>");
+                    context.Response.Write("<script>alert('" + "登录成功！" + "');window.location = 'HomePage.aspx';</script>");
                 }
                 else
                 {

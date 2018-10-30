@@ -1,0 +1,129 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMaster.master.cs" Inherits="UrbanFireSafetyManagementWeb.MainMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    
+    <link href="CSS/easyui.css" rel="stylesheet" />
+    <link href="CSS/icon.css" rel="stylesheet" />
+    <script src="scripts/jquery.easyui.min.js"></script>
+    <script src="scripts/jquery-1.7.1.min.js"></script>
+
+    <style type="text/css">
+        body
+        {
+            background-color:rgb(173, 173, 173);
+            font-family:'Microsoft YaHei UI','Microsoft YaHei',SimHei,KaiTi;
+            font-size:16px;
+            color:white;
+        }
+        div
+        {
+            
+        }
+        #mainDiv
+        {
+            width:1200px;
+            height:1200px;
+            margin:0 auto;
+            background-color:#3d3d3d;
+            position:relative;
+        }
+        #topDiv img
+        {
+            width:1201px;
+            height:200px;
+            margin-top:-10px;
+            margin-left:-1px;           
+        }
+        #navigationBar
+        {
+            height:50px;
+            width:1200px;
+            background-color:rgb(30, 29, 29);
+            margin-top:-2px;
+            margin-left:0px;
+        }
+        #footBar
+        {
+            height:20px;
+            width:1200px;
+            background-color:rgb(30, 29, 29);
+            position:absolute;
+            bottom:0;
+        
+        }
+        ul
+        {
+            padding:0px;
+            margin-top:-20px;
+            margin-left:0px;
+		}
+		li
+        {
+			list-style-type: none;/* 去掉li前的点 */
+			float: left;/*将li设置成做浮动，变为联动*/
+		}
+		a
+        {
+			display: block;/*将a变成块状*/
+			width: 120px;/*设置块的宽度*/
+			height: 50px;/*设置块的长度*/
+			font-family: Microsoft Yahei;
+			line-height: 50px;/*设置字体在块中的高度*/
+			margin: 0px 0px;/*块里的高宽通过margin设置*/
+			color: white;
+			text-align: center;/*字体居中*/
+			text-decoration: none;/*去掉下划线*/
+			font-size: 15px;
+		}
+		a:hover
+        {
+			background-color: rgb(16, 120, 173);
+            cursor:pointer;
+		}
+    </style>
+    <script type="text/javascript">
+
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="mainDiv">
+        <div id="topDiv">
+            <img src="image/TittleImage.png" />
+        </div>
+        <div id="navigationBar">
+            <ul class="daohang">
+			    <li><a id="homePageLink">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+			    <li><a id="upLoadPageLink">上传信息</a></li>
+			    <li><a id="checkInfoPageLink">查看上传</a></li>
+                <li><a id="personInfoPageLink">个人信息</a></li>
+			    <li><a id="projectInfoPageLink">关于项目</a></li>
+		    </ul>
+        </div>
+       
+
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+
+
+
+        <div id="footBar">
+            <span style="margin-left:150px;">|&nbsp;&nbsp;2018——2019&nbsp;&nbsp;|&nbsp;&nbsp;版权所有：太原理工大学安全与应急救援工程学院&nbsp;&nbsp;|&nbsp;&nbsp;备案号：晋ICP备18010110号&nbsp;&nbsp;|&nbsp;&nbsp;技术责任：薛嵩&nbsp;&nbsp;|</span>          
+        </div>
+    </div>
+    </form>
+</body>
+</html>
