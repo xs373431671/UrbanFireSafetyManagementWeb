@@ -94,6 +94,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AreaInfoUpLoad.aspx" />
+    <Content Include="AreaInfoUpLoadPage.aspx" />
     <Content Include="CSS\icon.css" />
     <Content Include="HomePage.aspx" />
     <Content Include="image\TittleImage.png" />
@@ -103,10 +105,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Register.html" />
+    <Content Include="Test.aspx" />
     <Content Include="ValidateImageCode.ashx" />
     <Content Include="SignIn.ashx" />
     <Content Include="Register.ashx" />
     <Content Include="MainMaster.Master" />
+    <Content Include="Index.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -122,12 +126,29 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AreaInfoUpLoad.aspx.cs">
+      <DependentUpon>AreaInfoUpLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AreaInfoUpLoad.aspx.designer.cs">
+      <DependentUpon>AreaInfoUpLoad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AreaInfoUpLoadPage.aspx.cs">
+      <DependentUpon>AreaInfoUpLoadPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AreaInfoUpLoadPage.aspx.designer.cs">
+      <DependentUpon>AreaInfoUpLoadPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.ashx.cs">
+      <DependentUpon>Index.ashx</DependentUpon>
     </Compile>
     <Compile Include="MainMaster.Master.cs">
       <DependentUpon>MainMaster.Master</DependentUpon>
@@ -142,6 +163,13 @@
     </Compile>
     <Compile Include="SignIn.ashx.cs">
       <DependentUpon>SignIn.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
     </Compile>
     <Compile Include="ValidateImageCode.ashx.cs">
       <DependentUpon>ValidateImageCode.ashx</DependentUpon>

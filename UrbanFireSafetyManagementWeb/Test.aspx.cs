@@ -8,13 +8,15 @@ using UFSM_Model;
 
 namespace UrbanFireSafetyManagementWeb
 {
-    public partial class HomePage : System.Web.UI.Page
+    public partial class Test : System.Web.UI.Page
     {
-        public int AreaNum { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+            UserInfo user = new UserInfo();
+            user.AreaNum = 999;
+            Session["userInfo"] = user;
 
-           
+            Response.Redirect("Index.ashx");
         }
     }
 }
