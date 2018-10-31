@@ -8,7 +8,7 @@ using UFSM_DataAccessLayer;
 
 namespace UFSM_BusinessLogicLayer
 {
-    class AreaInfoService
+    public class AreaInfoService
     {
         /// <summary>
         /// 全局共享：数据库中的AreaInfo对象集合
@@ -21,23 +21,32 @@ namespace UFSM_BusinessLogicLayer
         /// <param name="ai">设置好AreaNum属性的AreaNum对象</param>
         /// <param name="returnMessage">返回操作信息</param>
         /// <returns></returns>
-        public AreaInfo SelectAreaInfo(AreaInfo ai,out string returnMessage)
+        public AreaInfo SelectAreaInfo(int areaNum,out string returnMessage)
         {
-            if(areaInfoList.Count==0)
+            try
+            {
+                if (areaInfoList.Count == 0 || areaInfoList == null)
+                {
+                    returnMessage = "数据库为空！";
+                    return null;
+                }
+                foreach (AreaInfo a in areaInfoList)
+                {
+                    if (a.AreaNum == areaNum)
+                    {
+                        returnMessage = "查找成功！";
+                        return a;
+                    }
+                }
+                returnMessage = "未找到相关信息，请先添加！";
+                return null;
+            }
+            catch
             {
                 returnMessage = "数据库为空！";
                 return null;
             }
-            foreach (AreaInfo a in areaInfoList)
-            {
-                if(a.AreaNum==ai.AreaNum)
-                {
-                    returnMessage = "查找成功！";
-                    return a;
-                }
-            }
-            returnMessage = "未找到相关信息，请先添加！";
-            return null;
+            
         }
 
 

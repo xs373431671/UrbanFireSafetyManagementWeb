@@ -94,8 +94,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AreaInfoUpLoad.aspx" />
     <Content Include="AreaInfoUpLoadPage.aspx" />
+    <Content Include="CheckAreaInfoPage.aspx" />
     <Content Include="CSS\icon.css" />
     <Content Include="HomePage.aspx" />
     <Content Include="image\TittleImage.png" />
@@ -126,19 +126,19 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AreaInfoUpLoad.aspx.cs">
-      <DependentUpon>AreaInfoUpLoad.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AreaInfoUpLoad.aspx.designer.cs">
-      <DependentUpon>AreaInfoUpLoad.aspx</DependentUpon>
-    </Compile>
     <Compile Include="AreaInfoUpLoadPage.aspx.cs">
       <DependentUpon>AreaInfoUpLoadPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AreaInfoUpLoadPage.aspx.designer.cs">
       <DependentUpon>AreaInfoUpLoadPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckAreaInfoPage.aspx.cs">
+      <DependentUpon>CheckAreaInfoPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckAreaInfoPage.aspx.designer.cs">
+      <DependentUpon>CheckAreaInfoPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>

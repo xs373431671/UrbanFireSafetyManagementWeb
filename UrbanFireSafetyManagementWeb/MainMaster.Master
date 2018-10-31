@@ -27,7 +27,6 @@
         #mainDiv
         {
             width:1200px;
-            height:1200px;
             margin:0 auto;
             background-color:#3d3d3d;
             position:relative;
@@ -85,7 +84,7 @@
 			background-color: rgb(16, 120, 173);
             cursor:pointer;
 		}
-         #sonDiv 
+        #sonDiv 
         {
             width: 1200px;
             border: solid;

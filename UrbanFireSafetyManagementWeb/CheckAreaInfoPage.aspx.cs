@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using UFSM_BusinessLogicLayer;
 using UFSM_Model;
+using UFSM_BusinessLogicLayer;
 
 namespace UrbanFireSafetyManagementWeb
 {
-    public partial class AreaInfoUpLoadPage : System.Web.UI.Page
+    public partial class CheckAreaInfoPage : System.Web.UI.Page
     {
         /// <summary>
         /// 存放表格信息
@@ -29,22 +28,22 @@ namespace UrbanFireSafetyManagementWeb
             ReturnMessage = "无";
 
             NormalUser = new UserInfo() { AreaNum = 999 };     //实际项目中从session中获取***********************************************
-           
+
 
             AreaInfoService areaService = new AreaInfoService();
             //为Area属性赋值（根据当前用户的AreaNum属性）
             Area = areaService.SelectAreaInfo(NormalUser.AreaNum, out ReturnMessage);
 
-            if(Area==null)
+            if (Area == null)
             {
                 Area = new AreaInfo();
-                Area.AreaNum = (uint)NormalUser.AreaNum;                
+                Area.AreaNum = (uint)NormalUser.AreaNum;
             }
-           
-    
 
-           
-            
+
+
+
+
         }
     }
 }

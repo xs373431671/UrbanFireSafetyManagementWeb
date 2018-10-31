@@ -8,6 +8,8 @@ namespace UFSM_Model
 {
     public class AreaInfo
     {
+        
+
         private uint id;
         private uint areaNum;
         private byte attribute;
@@ -37,6 +39,40 @@ namespace UFSM_Model
         private DateTime areaUploadTime;
         private uint areaAssessmentYear;
         private byte areaRiskGrade;
+
+        public AreaInfo()
+        {
+            this.AreaNum = 0;
+            this.Attribute = 0;
+            this.PopQuality = 0;
+            this.BuildingFireResistanceRating = 0;
+            this.PopDensity = 0;
+            this.BuildingYears = 0;
+            this.FireSafetyPropaganda = 0;
+            this.PowerLineLoad = 0;
+            this.FireSafetyManagement = 0;
+            this.AgingOfPowerLines = 0;
+            this.FireInspectionOfKeyBuildings = 0;
+            this.TimeFactor = 0;
+            this.EconomicDensity = 0;
+            this.HighBuildingsNum = 0;
+            this.UndergroundCrowdedSpace = 0;
+            this.DensityOfKeyBuildings = 0;
+            this.RoadCongestion = 0;
+            this.BuildingDensity = 0;
+            this.DistributionOfInflammableStorage = 0;
+            this.FireStationCapacityCoverage = 0;
+            this.FireStationEquipment = 0;
+            this.PublicFireFacilities = 0;
+            this.DepartmentalEmergencyResponse = 0;
+            this.FireAndRescuePlan = 0;
+            this.KeyBuildingsFirePreventBuilt = 0;
+            this.AreaUploadTime = DateTime.Now;
+            this.AreaAssessmentYear = (uint)DateTime.Now.Year;
+            this.AreaRiskGrade = 0;
+            this.AreaSize = 0;
+            this.AreaPop = 0;
+        }
 
 
         public uint ID

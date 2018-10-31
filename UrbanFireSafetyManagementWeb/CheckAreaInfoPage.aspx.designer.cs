@@ -10,6 +10,6 @@
 namespace UrbanFireSafetyManagementWeb {
     
     
-    public partial class AreaInfoUpLoad {
+    public partial class CheckAreaInfoPage {
     }
 }
