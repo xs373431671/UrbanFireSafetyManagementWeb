@@ -104,6 +104,8 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="PersonInfoPage.aspx" />
+    <Content Include="ProjectInfoPage.aspx" />
     <Content Include="Register.html" />
     <Content Include="Test.aspx" />
     <Content Include="ValidateImageCode.ashx" />
@@ -156,6 +158,20 @@
     </Compile>
     <Compile Include="MainMaster.Master.designer.cs">
       <DependentUpon>MainMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PersonInfoPage.aspx.cs">
+      <DependentUpon>PersonInfoPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonInfoPage.aspx.designer.cs">
+      <DependentUpon>PersonInfoPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectInfoPage.aspx.cs">
+      <DependentUpon>ProjectInfoPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectInfoPage.aspx.designer.cs">
+      <DependentUpon>ProjectInfoPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.ashx.cs">

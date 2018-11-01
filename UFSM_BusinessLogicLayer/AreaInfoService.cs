@@ -156,10 +156,6 @@ namespace UFSM_BusinessLogicLayer
             returnMessage = "要删除的对象不存在";
             return false;           
         }
-
-
-                
-             
-        
+      
     }
 }

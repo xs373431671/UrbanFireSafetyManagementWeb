@@ -75,5 +75,23 @@ namespace UFSM_BusinessLogicLayer
 
 
 
+        public bool ChangeUserInfo(UserInfo user,out string returnMessage)
+        {
+            UserInfoDal userInfoDal = new UserInfoDal();
+            if (userInfoDal.ChangeUserInfo(user) > 0)
+            {
+                userList = new UserInfoDal().GetUserInfoList();
+                returnMessage = "修改成功";
+                return true;
+            }
+            else
+            {
+                returnMessage = "数据库异常，修改失败，请稍后重试";
+                return false;
+            }
+        }
+
+
+
     }
 }

@@ -19,27 +19,11 @@ namespace UrbanFireSafetyManagementWeb
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            ////判断用户Session["userInfo"]是否存在
-            //if(Session["userInfo"]==null)
-            //{
-            //    Response.Redirect("Index.html");
-            //}
-
-            
-
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
+            //判断用户Session["userInfo"]是否存在
+            if (Session["userInfo"] == null)
+            {
+                Response.Redirect("Index.html");
+            }
         }
     }
 }

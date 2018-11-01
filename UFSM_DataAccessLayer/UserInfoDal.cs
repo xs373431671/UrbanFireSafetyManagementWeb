@@ -88,6 +88,34 @@ namespace UFSM_DataAccessLayer
 
 
         /// <summary>
+        /// 根据传入的UserInfo的账号信息修改数据库中的UserInfo信息
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
+        public int ChangeUserInfo(UserInfo user)
+        {
+            string sql = "update UFSM_UserInfo set Name=@Name,Department=@Department,Password=@Password,Email=@Email,Telephone=@Telephone where Account=@Account";
+
+            SqlParameter[] pars = {
+                new SqlParameter("@Name",SqlDbType.NVarChar,8),
+                new SqlParameter("@Department", SqlDbType.NVarChar, 64),
+                new SqlParameter("@Password", SqlDbType.NVarChar, 16),
+                new SqlParameter("@Email", SqlDbType.NVarChar, 32),
+                new SqlParameter("@Telephone", SqlDbType.NVarChar, 16),
+                new SqlParameter("@Account", SqlDbType.NVarChar, 16)};
+            pars[0].Value = user.Name;
+            pars[1].Value = user.Department;
+            pars[2].Value = user.Password;
+            pars[3].Value = user.Email;
+            pars[4].Value = user.Telephone;
+            pars[5].Value = user.Account;
+
+            return SqlHelper.ExecuteNonQuery(sql, pars);
+        }
+
+
+
+        /// <summary>
         /// 通过Account值删除数据库对应用户
         /// </summary>
         /// <param name="account">账号字符串</param>
