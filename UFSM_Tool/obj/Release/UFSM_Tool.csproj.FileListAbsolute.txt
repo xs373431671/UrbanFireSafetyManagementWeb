@@ -1,0 +1,5 @@
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_Tool\bin\Release\UFSM_Tool.dll
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_Tool\bin\Release\UFSM_Tool.pdb
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_Tool\obj\Release\UFSM_Tool.csprojResolveAssemblyReference.cache
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_Tool\obj\Release\UFSM_Tool.dll
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_Tool\obj\Release\UFSM_Tool.pdb

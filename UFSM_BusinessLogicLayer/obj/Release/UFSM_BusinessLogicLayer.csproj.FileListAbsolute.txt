@@ -1,0 +1,9 @@
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_BusinessLogicLayer\bin\Release\UFSM_BusinessLogicLayer.dll
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_BusinessLogicLayer\bin\Release\UFSM_BusinessLogicLayer.pdb
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_BusinessLogicLayer\bin\Release\UFSM_DataAccessLayer.dll
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_BusinessLogicLayer\bin\Release\UFSM_Model.dll
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_BusinessLogicLayer\bin\Release\UFSM_DataAccessLayer.pdb
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_BusinessLogicLayer\bin\Release\UFSM_Model.pdb
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_BusinessLogicLayer\obj\Release\UFSM_BusinessLogicLayer.csprojResolveAssemblyReference.cache
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_BusinessLogicLayer\obj\Release\UFSM_BusinessLogicLayer.dll
+D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_BusinessLogicLayer\obj\Release\UFSM_BusinessLogicLayer.pdb
