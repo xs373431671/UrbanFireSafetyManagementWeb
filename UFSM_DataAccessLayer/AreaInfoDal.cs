@@ -70,8 +70,12 @@ namespace UFSM_DataAccessLayer
                     areaInfo = GetAreaInfoFromDataRow(dr);
                     areaInfoList.Add(areaInfo);
                 }
+                return areaInfoList;
             }
-            return areaInfoList;
+            else
+            {
+                return new List<AreaInfo>();
+            }
         }
 
 

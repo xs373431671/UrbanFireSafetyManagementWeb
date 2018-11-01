@@ -26,25 +26,55 @@ namespace UrbanFireSafetyManagementWeb
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            ReturnMessage = "无";
+            ReturnMessage = string.Empty;
+            NormalUser = new UserInfo() { AreaNum = 999 };     //实际项目中从session中获取*********************************************** 
 
-            NormalUser = new UserInfo() { AreaNum = 999 };     //实际项目中从session中获取***********************************************
-           
-
-            AreaInfoService areaService = new AreaInfoService();
-            //为Area属性赋值（根据当前用户的AreaNum属性）
-            Area = areaService.SelectAreaInfo(NormalUser.AreaNum, out ReturnMessage);
-
-            if(Area==null)
+            if (IsPostBack)
             {
-                Area = new AreaInfo();
-                Area.AreaNum = (uint)NormalUser.AreaNum;                
-            }
-           
-    
+                AreaInfo area = new AreaInfo();
+                area.AreaNum = Convert.ToUInt32(NormalUser.AreaNum);
+                area.Attribute = Convert.ToByte(Request.Form["attribute"]);
+                area.PopQuality = Convert.ToByte(Request.Form["popQuality"]);
+                area.BuildingFireResistanceRating = Convert.ToByte(Request.Form["buildingFireResistanceRating"]);
+                area.PopDensity = Convert.ToByte(Request.Form["popDensity"]);
+                area.BuildingYears = Convert.ToByte(Request.Form["buildingYears"]);
+                area.FireSafetyManagement = Convert.ToByte(Request.Form["fireSafetyManagement"]);
+                area.AgingOfPowerLines = Convert.ToByte(Request.Form["agingOfPowerLines"]);
+                area.FireInspectionOfKeyBuildings = Convert.ToByte(Request.Form["fireInspectionOfKeyBuildings"]);
+                area.TimeFactor = 0;
+                area.EconomicDensity = Convert.ToByte(Request.Form["economicDensity"]);
+                area.HighBuildingsNum = Convert.ToByte(Request.Form["highBuildingsNum"]);
+                area.UndergroundCrowdedSpace = Convert.ToByte(Request.Form["undergroundCrowdedSpace"]);
+                area.DensityOfKeyBuildings = Convert.ToByte(Request.Form["densityOfKeyBuildings"]);
+                area.RoadCongestion = Convert.ToByte(Request.Form["roadCongestion"]);
+                area.BuildingDensity = Convert.ToByte(Request.Form["buildingDensity"]);
+                area.DistributionOfInflammableStorage = Convert.ToByte(Request.Form["distributionOfInflammableStorage"]);
+                area.FireStationCapacityCoverage = Convert.ToByte(Request.Form["fireStationCapacityCoverage"]);
+                area.FireStationEquipment = Convert.ToByte(Request.Form["fireStationEquipment"]);
+                area.PublicFireFacilities = Convert.ToByte(Request.Form["publicFireFacilities"]);
+                area.DepartmentalEmergencyResponse = Convert.ToByte(Request.Form["departmentalEmergencyResponse"]);
+                area.FireAndRescuePlan = Convert.ToByte(Request.Form["fireAndRescuePlan"]);
+                area.KeyBuildingsFirePreventBuilt = Convert.ToByte(Request.Form["keyBuildingsFirePreventBuilt"]);
+                area.AreaUploadTime = DateTime.Now;
+                area.AreaAssessmentYear = Convert.ToUInt32(DateTime.Now.Year);
+                area.AreaRiskGrade = 0;
+                area.AreaSize=0;
+                area.AreaPop=0;
 
-           
-            
+                AreaInfoService areaService = new AreaInfoService();
+                if(areaService.AddAreaInfo(area,out ReturnMessage))
+                {
+                    Response.Write("<script>alert('" + ReturnMessage + "');window.location = 'CheckAreaInfoPage.aspx';</script>");
+                }
+                else
+                {
+                    Response.Write("<script>alert('" + ReturnMessage + "');window.location = 'CheckAreaInfoPage.aspx';</script>");
+                }                                  
+            }
+            else
+            {
+
+            }          
         }
     }
 }

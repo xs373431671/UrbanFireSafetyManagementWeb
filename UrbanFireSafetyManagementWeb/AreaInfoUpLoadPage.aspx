@@ -53,12 +53,12 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h2 style="text-align:center">欢迎使用火灾风险指标评分录入系统</h2>
-    <span style="margin-left:250px;">您负责的区域为：<%= NormalUser.AreaNum%></span>
+    <span style="margin-left:250px;">您负责的区域为：<%= NormalUser.AreaNum%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=ReturnMessage%></span>
     <table border="1">
         <tr>
             <th class="th1">指标编号</th>
-            <th class="th2">名指标称</th>
-            <th class="th3">评指标分</th>
+            <th class="th2">指标名称</th>
+            <th class="th3">指标评分</th>
         </tr>
         <tr>
             <td class="th1">1</td>
@@ -175,10 +175,13 @@
             <td class="th2">重点消防单位消防自建情况</td>
             <td class="th3"><input type="text" class="text0-100" name="keyBuildingsFirePreventBuilt" value="0" /></td>
         </tr>
+        <tr>
+            <td class="th1" style="font-size:medium"> 注&nbsp;&nbsp;&nbsp;&nbsp;意&nbsp;:</td>
+            <td colspan="2" style="text-align:left">打分请填入1-100之间的阿拉伯数字，评分最低为1分，最高为100分，未在评估范围内的指标请打0分!</td>
+        </tr>
     </table>
     <br />
     <br />
-
     <div id="login_click">
         <input type="submit" id="btlogin" value="提交到数据库" />
     </div>

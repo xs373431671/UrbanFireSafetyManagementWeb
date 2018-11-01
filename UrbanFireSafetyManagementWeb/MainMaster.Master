@@ -84,11 +84,6 @@
 			background-color: rgb(16, 120, 173);
             cursor:pointer;
 		}
-        #sonDiv 
-        {
-            width: 1200px;
-            border: solid;
-        }
         #topSpace,#bottomSpace
         {
             height:20px;
@@ -96,7 +91,7 @@
         #sonMainDiv
         {
             width:1100px;
-            border:solid;
+            /*border:solid;*/
             margin-left:50px;
         }
     </style>
@@ -128,7 +123,7 @@
                 $('#areaInfoUpLoad').css('background-color', 'rgb(16, 120, 173)');
             }
             if (window.location.pathname == "/CheckAreaInfoPage.aspx") {
-                $('#checkAreaInfo').css('background-color', 'rgb(16, 120, 173)');
+                $('#checkInfoPageLink').css('background-color', 'rgb(16, 120, 173)');
             }
             if (window.location.pathname == "/PersonInfoPage.aspx") {
                 $('#personInfoPageLink').css('background-color', 'rgb(16, 120, 173)');
@@ -154,7 +149,7 @@
             <ul class="daohang">
 			    <li><a id="homePageLink">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
 			    <li><a id="areaInfoUpLoad">上传信息</a></li>
-			    <li><a id="checkAreaInfo">查看上传</a></li>
+			    <li><a id="checkInfoPageLink">查看上传</a></li>
                 <li><a id="personInfoPageLink">个人信息</a></li>
 			    <li><a id="projectInfoPageLink">关于项目</a></li>
 		    </ul>

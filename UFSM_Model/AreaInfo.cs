@@ -84,7 +84,7 @@ namespace UFSM_Model
         public uint AreaNum
         {
             get { return areaNum; }
-            set { if (value < 0 || value > 100) { value = 0; } else { areaNum = value; } }
+            set { if (value < 0 || value > 1000) { value = 0; } else { areaNum = value; } }
         }
         public byte Attribute
         {

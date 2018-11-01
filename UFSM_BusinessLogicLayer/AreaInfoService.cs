@@ -28,7 +28,7 @@ namespace UFSM_BusinessLogicLayer
                 if (areaInfoList.Count == 0 || areaInfoList == null)
                 {
                     returnMessage = "数据库为空！";
-                    return null;
+                    return new AreaInfo();
                 }
                 foreach (AreaInfo a in areaInfoList)
                 {
@@ -39,12 +39,12 @@ namespace UFSM_BusinessLogicLayer
                     }
                 }
                 returnMessage = "未找到相关信息，请先添加！";
-                return null;
+                return new AreaInfo();
             }
             catch
             {
                 returnMessage = "数据库为空！";
-                return null;
+                return new AreaInfo();
             }
             
         }
