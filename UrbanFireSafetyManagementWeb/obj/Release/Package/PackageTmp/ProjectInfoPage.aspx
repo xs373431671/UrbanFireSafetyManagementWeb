@@ -8,7 +8,7 @@
         p
         {
             text-align:justify;text-justify:inter-word;text-justify:inter-ideograph;
-            line-height:30px;
+            line-height:40px;
             text-indent:2em;
             font-family:"微软雅黑",sans-serif,SimHei;
             font-size:17px;
@@ -17,7 +17,7 @@
         }
         span
         {
-            line-height:30px;
+            line-height:40px;
             text-indent:2em;
             font-family:"微软雅黑",SimHei，sans-serif;
             font-size:17px;

@@ -24,7 +24,7 @@ namespace UrbanFireSafetyManagementWeb
             user.Email = "373431671@qq.com";
             Session["userInfo"] = user;
 
-            Response.Redirect("PersonInfoPage.aspx");
+            Response.Redirect("ProjectInfoPage.aspx");
         }
     }
 }

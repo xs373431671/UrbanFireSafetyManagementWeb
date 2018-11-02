@@ -36,7 +36,25 @@
             width:1201px;
             height:200px;
             margin-top:-10px;
-            margin-left:-1px;           
+            margin-left:-1px; 
+            position:relative;          
+        }
+        #exit
+        {
+            position:absolute;
+            top:10px;
+            right:10px;
+            z-index:10;
+            font-weight:bolder;
+            color:rgb(16, 120, 173);       
+            
+			font-family:'Microsoft YaHei UI',"宋体",SimHei;
+			text-decoration: none;/*去掉下划线*/
+			font-size: 20px;
+        }
+        #exit:hover
+        {
+            cursor:pointer;
         }
         #navigationBar
         {
@@ -46,6 +64,8 @@
             margin-top:-2px;
             margin-left:0px;
         }
+
+        
         #footBar
         {
             height:28px;
@@ -53,8 +73,7 @@
             background-color:#2f435e;
             position:absolute;
             bottom:0;
-            margin-top:50px;
-        
+            margin-top:50px;       
         }
         ul
         {
@@ -67,7 +86,7 @@
 			list-style-type: none;/* 去掉li前的点 */
 			float: left;/*将li设置成做浮动，变为联动*/
 		}
-		a
+		.listA
         {
 			display: block;/*将a变成块状*/
 			width: 120px;/*设置块的宽度*/
@@ -80,7 +99,7 @@
 			text-decoration: none;/*去掉下划线*/
 			font-size: 18px;
 		}
-		a:hover
+		.listA:hover
         {
 			background-color: rgb(16, 120, 173);
             cursor:pointer;
@@ -101,19 +120,28 @@
         {
             $('#homePageLink').click(function ()
             {
+                $("body").css('cursor') == 'wait';
                 self.location.href = 'HomePage.aspx';
             });
             $('#areaInfoUpLoad').click(function () {
+                $("body").css('cursor') == 'wait';
                 self.location.href = 'AreaInfoUpLoadPage.aspx';
             });
             $('#checkInfoPageLink').click(function () {
+                $("body").css('cursor') == 'wait';
                 self.location.href = 'CheckAreaInfoPage.aspx';
             });
             $('#personInfoPageLink').click(function () {
+                $("body").css('cursor') == 'wait';
                 self.location.href = 'PersonInfoPage.aspx';
             });
             $('#projectInfoPageLink').click(function () {
+                $("body").css('cursor') == 'wait';
                 self.location.href = 'ProjectInfoPage.aspx';
+            });
+            $("#exit").click(function () {
+                $("body").css('cursor') == 'wait';
+                self.location.href = 'Index.ashx?exit="exit"';
             });
 
             if (window.location.pathname == "/HomePage.aspx")
@@ -144,15 +172,16 @@
     <form id="form1" runat="server">
     <div id="mainDiv">
         <div id="topDiv">
+            <a id="exit">退出当前登录</a>
             <img src="image/TittleImage.png" />
         </div>
         <div id="navigationBar">
             <ul class="daohang">
-			    <li><a id="homePageLink">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
-			    <li><a id="areaInfoUpLoad">上传信息</a></li>
-			    <li><a id="checkInfoPageLink">查看上传</a></li>
-                <li><a id="personInfoPageLink">个人信息</a></li>
-			    <li><a id="projectInfoPageLink">关于项目</a></li>
+			    <li><a class="listA" id="homePageLink">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+			    <li><a class="listA" id="areaInfoUpLoad">上传信息</a></li>
+			    <li><a class="listA" id="checkInfoPageLink">查看上传</a></li>
+                <li><a class="listA" id="personInfoPageLink">个人信息</a></li>
+			    <li><a class="listA" id="projectInfoPageLink">关于项目</a></li>
 		    </ul>
             <span style="float:right; margin-top:20px;font-size:x-small;color:lawngreen;">此网站仅用于个人科研用途</span>
         </div>

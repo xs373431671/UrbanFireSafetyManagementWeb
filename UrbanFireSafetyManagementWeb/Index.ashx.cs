@@ -15,6 +15,10 @@ namespace UrbanFireSafetyManagementWeb
         public void ProcessRequest(HttpContext context)
         {
             context.Response.ContentType = "text/plain";
+            if(context.Request.QueryString["exit"]=="exit"||context.Request.QueryString!=null)
+            {
+                context.Session["userInfo"] = null;
+            }
 
             //显示登录页面前先判定是否有Session，如果没有，则跳转到Index.html
             if (context.Session["userInfo"] == null)
