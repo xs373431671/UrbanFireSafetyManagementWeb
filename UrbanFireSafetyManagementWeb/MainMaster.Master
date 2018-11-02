@@ -16,7 +16,7 @@
         body
         {
             background-color:rgb(173, 173, 173);
-            font-family:'Microsoft YaHei UI','Microsoft YaHei',SimHei,KaiTi;
+            font-family:"微软雅黑",SimHei，sans-serif;
             font-size:16px;
             color:white;
         }
@@ -42,7 +42,7 @@
         {
             height:50px;
             width:1200px;
-            background-color:#2f435e;
+            background-color:black;
             margin-top:-2px;
             margin-left:0px;
         }
@@ -53,6 +53,7 @@
             background-color:#2f435e;
             position:absolute;
             bottom:0;
+            margin-top:50px;
         
         }
         ul
@@ -166,7 +167,7 @@
         <div id="bottomSpace"></div>
        
         <div id="footBar">
-            <span style="margin-left:150px;">|&nbsp;&nbsp;2018——2019&nbsp;&nbsp;|&nbsp;&nbsp;版权所有：太原理工大学安全与应急救援工程学院&nbsp;&nbsp;|&nbsp;&nbsp;备案号：晋ICP备18010110号&nbsp;&nbsp;|&nbsp;&nbsp;技术责任：薛嵩&nbsp;&nbsp;|</span>          
+            <span style="margin-left:100px;">|&nbsp;&nbsp;2018——2019&nbsp;&nbsp;|&nbsp;&nbsp;版权所有：太原理工大学安全与应急救援工程学院&nbsp;&nbsp;|&nbsp;&nbsp;备案号：晋ICP备18010110号&nbsp;&nbsp;|&nbsp;&nbsp;技术责任：薛嵩&nbsp;&nbsp;|</span>          
         </div>
     </div>
     </form>

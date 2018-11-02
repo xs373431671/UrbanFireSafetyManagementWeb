@@ -92,7 +92,7 @@
       <publishTime>11/01/2018 19:13:05</publishTime>
     </File>
     <File Include="bin/UrbanFireSafetyManagementWeb.dll">
-      <publishTime>11/02/2018 10:16:39</publishTime>
+      <publishTime>11/02/2018 12:26:08</publishTime>
     </File>
     <File Include="CheckAreaInfoPage.aspx">
       <publishTime>11/02/2018 10:16:11</publishTime>
@@ -104,10 +104,16 @@
       <publishTime>10/30/2018 13:32:14</publishTime>
     </File>
     <File Include="HomePage.aspx">
-      <publishTime>11/02/2018 10:19:03</publishTime>
+      <publishTime>11/02/2018 10:43:36</publishTime>
+    </File>
+    <File Include="image/JiShuLuXian.png">
+      <publishTime>11/02/2018 12:04:58</publishTime>
     </File>
     <File Include="image/TittleImage.png">
       <publishTime>10/30/2018 15:12:24</publishTime>
+    </File>
+    <File Include="image/TiXi.png">
+      <publishTime>11/02/2018 12:06:33</publishTime>
     </File>
     <File Include="Index.ashx">
       <publishTime>10/31/2018 10:43:13</publishTime>
@@ -116,7 +122,7 @@
       <publishTime>11/02/2018 10:21:41</publishTime>
     </File>
     <File Include="MainMaster.Master">
-      <publishTime>11/02/2018 10:11:11</publishTime>
+      <publishTime>11/02/2018 13:37:15</publishTime>
     </File>
     <File Include="packages.config">
       <publishTime>11/02/2018 10:08:45</publishTime>
@@ -125,7 +131,7 @@
       <publishTime>11/02/2018 10:16:11</publishTime>
     </File>
     <File Include="ProjectInfoPage.aspx">
-      <publishTime>11/02/2018 10:16:11</publishTime>
+      <publishTime>11/02/2018 13:37:15</publishTime>
     </File>
     <File Include="Register.ashx">
       <publishTime>10/30/2018 13:32:14</publishTime>
