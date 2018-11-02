@@ -14,7 +14,7 @@
       <publishTime>10/24/2018 15:01:44</publishTime>
     </File>
     <File Include="AreaInfoUpLoadPage.aspx">
-      <publishTime>11/01/2018 12:29:17</publishTime>
+      <publishTime>11/02/2018 10:16:11</publishTime>
     </File>
     <File Include="bin/ApplicationInsights.config">
       <publishTime>10/24/2018 15:01:44</publishTime>
@@ -92,10 +92,10 @@
       <publishTime>11/01/2018 19:13:05</publishTime>
     </File>
     <File Include="bin/UrbanFireSafetyManagementWeb.dll">
-      <publishTime>11/01/2018 19:13:07</publishTime>
+      <publishTime>11/02/2018 10:16:39</publishTime>
     </File>
     <File Include="CheckAreaInfoPage.aspx">
-      <publishTime>11/01/2018 12:30:50</publishTime>
+      <publishTime>11/02/2018 10:16:11</publishTime>
     </File>
     <File Include="CSS/easyui.css">
       <publishTime>10/30/2018 13:32:14</publishTime>
@@ -104,7 +104,7 @@
       <publishTime>10/30/2018 13:32:14</publishTime>
     </File>
     <File Include="HomePage.aspx">
-      <publishTime>11/01/2018 19:35:31</publishTime>
+      <publishTime>11/02/2018 10:19:03</publishTime>
     </File>
     <File Include="image/TittleImage.png">
       <publishTime>10/30/2018 15:12:24</publishTime>
@@ -113,19 +113,19 @@
       <publishTime>10/31/2018 10:43:13</publishTime>
     </File>
     <File Include="Index.html">
-      <publishTime>10/30/2018 14:14:32</publishTime>
+      <publishTime>11/02/2018 10:21:41</publishTime>
     </File>
     <File Include="MainMaster.Master">
-      <publishTime>11/01/2018 19:36:49</publishTime>
+      <publishTime>11/02/2018 10:11:11</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>11/01/2018 19:10:17</publishTime>
+      <publishTime>11/02/2018 10:08:45</publishTime>
     </File>
     <File Include="PersonInfoPage.aspx">
-      <publishTime>11/01/2018 17:15:35</publishTime>
+      <publishTime>11/02/2018 10:16:11</publishTime>
     </File>
     <File Include="ProjectInfoPage.aspx">
-      <publishTime>11/01/2018 18:26:05</publishTime>
+      <publishTime>11/02/2018 10:16:11</publishTime>
     </File>
     <File Include="Register.ashx">
       <publishTime>10/30/2018 13:32:14</publishTime>
@@ -143,13 +143,13 @@
       <publishTime>10/30/2018 13:32:15</publishTime>
     </File>
     <File Include="Test.aspx">
-      <publishTime>10/31/2018 09:58:36</publishTime>
+      <publishTime>11/02/2018 10:16:10</publishTime>
     </File>
     <File Include="ValidateImageCode.ashx">
       <publishTime>10/30/2018 13:32:15</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>11/01/2018 19:13:09</publishTime>
+      <publishTime>11/02/2018 10:12:36</publishTime>
     </File>
   </ItemGroup>
 </Project>
