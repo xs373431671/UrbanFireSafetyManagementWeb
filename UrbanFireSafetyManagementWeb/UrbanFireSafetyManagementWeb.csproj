@@ -95,7 +95,9 @@
     <Content Include="CheckAreaInfoPage.aspx" />
     <Content Include="CSS\icon.css" />
     <Content Include="HomePage.aspx" />
+    <Content Include="image\JiShuLuXian.png" />
     <Content Include="image\TittleImage.png" />
+    <Content Include="image\TiXi.png" />
     <Content Include="Index.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
