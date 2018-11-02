@@ -24,6 +24,10 @@ namespace UrbanFireSafetyManagementWeb
             {
                 Response.Redirect("Index.html");
             }
+            else
+            {
+                Session.Timeout = 30;
+            }
         }
     }
 }

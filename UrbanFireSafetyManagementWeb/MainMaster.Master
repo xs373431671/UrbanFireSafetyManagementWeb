@@ -68,7 +68,7 @@
         
         #footBar
         {
-            height:28px;
+            height:25px;
             width:1200px;
             background-color:#2f435e;
             position:absolute;
@@ -120,23 +120,23 @@
         {
             $('#homePageLink').click(function ()
             {
-                $("body").css('cursor') == 'wait';
+                $("#homePageLink").css('cursor') == 'wait';
                 self.location.href = 'HomePage.aspx';
             });
             $('#areaInfoUpLoad').click(function () {
-                $("body").css('cursor') == 'wait';
+                $("#areaInfoUpLoad").css('cursor') == 'wait';
                 self.location.href = 'AreaInfoUpLoadPage.aspx';
             });
             $('#checkInfoPageLink').click(function () {
-                $("body").css('cursor') == 'wait';
+                $("#checkInfoPageLink").css('cursor') == 'wait';
                 self.location.href = 'CheckAreaInfoPage.aspx';
             });
             $('#personInfoPageLink').click(function () {
-                $("body").css('cursor') == 'wait';
+                $("#personInfoPageLink").css('cursor') == 'wait';
                 self.location.href = 'PersonInfoPage.aspx';
             });
             $('#projectInfoPageLink').click(function () {
-                $("body").css('cursor') == 'wait';
+                $("#projectInfoPageLink").css('cursor') == 'wait';
                 self.location.href = 'ProjectInfoPage.aspx';
             });
             $("#exit").click(function () {
@@ -183,7 +183,7 @@
                 <li><a class="listA" id="personInfoPageLink">个人信息</a></li>
 			    <li><a class="listA" id="projectInfoPageLink">关于项目</a></li>
 		    </ul>
-            <span style="float:right; margin-top:20px;font-size:x-small;color:lawngreen;">此网站仅用于个人科研用途</span>
+            <span  style="float:right; margin-top:20px;font-size:x-small;color:lawngreen;">此网站仅用于个人科研用途</span>
         </div>
 
         <div id="topSpace"></div>
@@ -196,7 +196,7 @@
         <div id="bottomSpace"></div>
        
         <div id="footBar">
-            <span style="margin-left:100px;">|&nbsp;&nbsp;2018——2019&nbsp;&nbsp;|&nbsp;&nbsp;版权所有：太原理工大学安全与应急救援工程学院&nbsp;&nbsp;|&nbsp;&nbsp;备案号：晋ICP备18010110号&nbsp;&nbsp;|&nbsp;&nbsp;技术责任：薛嵩&nbsp;&nbsp;|</span>          
+            <span id="footSpan" style="margin-left:150px;margin:auto">|&nbsp;&nbsp;2018——2019&nbsp;&nbsp;|&nbsp;&nbsp;版权所有：太原理工大学安全与应急救援工程学院&nbsp;&nbsp;|&nbsp;&nbsp;备案号：晋ICP备18010110号&nbsp;&nbsp;|&nbsp;&nbsp;技术责任：薛嵩&nbsp;&nbsp;|</span>          
         </div>
     </div>
     </form>
