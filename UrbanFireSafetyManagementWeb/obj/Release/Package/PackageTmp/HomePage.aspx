@@ -11,5 +11,12 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <br />
-    
+    <p>主页</p>
+    <p>主页</p>
+    <p>主页</p>
+    <p>主页</p>
+    <p>主页</p>
+    <p>主页</p>
+    <p>主页</p>
+    <br />
 </asp:Content>
