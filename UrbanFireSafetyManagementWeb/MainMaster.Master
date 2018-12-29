@@ -50,7 +50,7 @@
             
 			font-family:'Microsoft YaHei UI',"宋体",SimHei;
 			text-decoration: none;/*去掉下划线*/
-			font-size: 20px;
+			font-size: 10px;
         }
         #exit:hover
         {

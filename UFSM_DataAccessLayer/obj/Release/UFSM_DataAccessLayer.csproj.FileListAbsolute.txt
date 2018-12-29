@@ -5,3 +5,10 @@ D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_DataAccessLayer
 D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_DataAccessLayer\obj\Release\UFSM_DataAccessLayer.csprojResolveAssemblyReference.cache
 D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_DataAccessLayer\obj\Release\UFSM_DataAccessLayer.dll
 D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_DataAccessLayer\obj\Release\UFSM_DataAccessLayer.pdb
+D:\GitHub\UrbanFireSafetyManagementWeb\UFSM_DataAccessLayer\bin\Release\UFSM_DataAccessLayer.dll
+D:\GitHub\UrbanFireSafetyManagementWeb\UFSM_DataAccessLayer\bin\Release\UFSM_DataAccessLayer.pdb
+D:\GitHub\UrbanFireSafetyManagementWeb\UFSM_DataAccessLayer\bin\Release\UFSM_Model.dll
+D:\GitHub\UrbanFireSafetyManagementWeb\UFSM_DataAccessLayer\bin\Release\UFSM_Model.pdb
+D:\GitHub\UrbanFireSafetyManagementWeb\UFSM_DataAccessLayer\obj\Release\UFSM_DataAccessLayer.csprojResolveAssemblyReference.cache
+D:\GitHub\UrbanFireSafetyManagementWeb\UFSM_DataAccessLayer\obj\Release\UFSM_DataAccessLayer.dll
+D:\GitHub\UrbanFireSafetyManagementWeb\UFSM_DataAccessLayer\obj\Release\UFSM_DataAccessLayer.pdb
