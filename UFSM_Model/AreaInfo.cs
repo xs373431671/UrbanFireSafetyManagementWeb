@@ -219,7 +219,7 @@ namespace UFSM_Model
         public byte AreaRiskGrade
         {
             get { return areaRiskGrade; }
-            set { if (value < 0 || value > 5) { value = 0; } else { areaRiskGrade = value; } }
+            set { if (value < 0 || value > 100) { value = 0; } else { areaRiskGrade = value; } }
         }
         public uint AreaSize{ get; set; }
         public uint AreaPop{ get; set; }

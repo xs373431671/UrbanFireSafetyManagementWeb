@@ -27,7 +27,7 @@ namespace UrbanFireSafetyManagementWeb
         protected void Page_Load(object sender, EventArgs e)
         {
             ReturnMessage = string.Empty;
-            NormalUser = new UserInfo() { AreaNum = 999 };     //实际项目中从session中获取*********************************************** 
+            NormalUser = (UserInfo)Session["userInfo"];   //实际项目中从session中获取*********************************************** 
 
             if (IsPostBack)
             {

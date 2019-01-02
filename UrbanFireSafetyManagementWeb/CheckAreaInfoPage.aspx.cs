@@ -21,7 +21,7 @@ namespace UrbanFireSafetyManagementWeb
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            NormalUser = new UserInfo() { AreaNum = 999 };     //实际项目中从session中获取***********************************************
+            NormalUser =(UserInfo)Session["userInfo"];     //实际项目中从session中获取***********************************************
             returnMessage = string.Empty;
             AreaInfoService areaService = new AreaInfoService();
             //为Area属性赋值（根据当前用户的AreaNum属性）

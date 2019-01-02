@@ -3,3 +3,8 @@ D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_Model\bin\Debug
 D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_Model\obj\Debug\UFSM_Model.dll
 D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_Model\obj\Debug\UFSM_Model.pdb
 D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UFSM_Model\obj\Debug\UFSM_Model.csprojResolveAssemblyReference.cache
+D:\GitHub\UrbanFireSafetyManagementWeb\UFSM_Model\bin\Debug\UFSM_Model.dll
+D:\GitHub\UrbanFireSafetyManagementWeb\UFSM_Model\bin\Debug\UFSM_Model.pdb
+D:\GitHub\UrbanFireSafetyManagementWeb\UFSM_Model\obj\Debug\UFSM_Model.csprojResolveAssemblyReference.cache
+D:\GitHub\UrbanFireSafetyManagementWeb\UFSM_Model\obj\Debug\UFSM_Model.dll
+D:\GitHub\UrbanFireSafetyManagementWeb\UFSM_Model\obj\Debug\UFSM_Model.pdb

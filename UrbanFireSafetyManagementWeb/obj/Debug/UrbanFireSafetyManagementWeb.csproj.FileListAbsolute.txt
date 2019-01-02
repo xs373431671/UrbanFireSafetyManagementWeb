@@ -25,3 +25,30 @@ D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UrbanFireSafetyManag
 D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\Microsoft.AI.Web.xml
 D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\Microsoft.AI.WindowsServer.xml
 D:\visual studio 2015\Projects\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\Microsoft.ApplicationInsights.xml
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\ApplicationInsights.config
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\UrbanFireSafetyManagementWeb.dll.config
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\UrbanFireSafetyManagementWeb.dll
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\UrbanFireSafetyManagementWeb.pdb
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\Microsoft.AI.Agent.Intercept.dll
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\Microsoft.AI.DependencyCollector.dll
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\Microsoft.AI.Web.dll
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\Microsoft.AI.WindowsServer.dll
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\Microsoft.ApplicationInsights.dll
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\UFSM_BusinessLogicLayer.dll
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\UFSM_DataAccessLayer.dll
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\UFSM_Model.dll
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\UFSM_Tool.dll
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\UFSM_BusinessLogicLayer.pdb
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\UFSM_DataAccessLayer.pdb
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\UFSM_Model.pdb
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\UFSM_Tool.pdb
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\Microsoft.AI.DependencyCollector.xml
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\Microsoft.AI.Web.xml
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\Microsoft.AI.WindowsServer.xml
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\bin\Microsoft.ApplicationInsights.xml
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\obj\Debug\UrbanFireSafetyManagementWeb.csprojResolveAssemblyReference.cache
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\obj\Debug\UrbanFireSafetyManagementWeb.dll
+D:\GitHub\UrbanFireSafetyManagementWeb\UrbanFireSafetyManagementWeb\obj\Debug\UrbanFireSafetyManagementWeb.pdb

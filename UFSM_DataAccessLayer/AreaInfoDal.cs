@@ -21,30 +21,38 @@ namespace UFSM_DataAccessLayer
             AreaInfo areaInfo = new AreaInfo();
             areaInfo.ID = Convert.ToUInt32(dr["ID"]);
             areaInfo.AreaNum = Convert.ToUInt32(dr["AreaNum"]);
-            areaInfo.Attribute = Convert.ToByte(dr["Attribute"]);
-            areaInfo.PopQuality = Convert.ToByte(dr["PopQuality"]);
-            areaInfo.BuildingFireResistanceRating= Convert.ToByte(dr["BuildingFireResistanceRating"]);
-            areaInfo.PopDensity = Convert.ToByte(dr["PopDensity"]);
-            areaInfo.BuildingYears = Convert.ToByte(dr["BuildingYears"]);
-            areaInfo.FireSafetyPropaganda= Convert.ToByte(dr["FireSafetyPropaganda"]);
-            areaInfo.AgingOfPowerLines = Convert.ToByte(dr["AgingOfPowerLines"]);
-            areaInfo.FireInspectionOfKeyBuildings= Convert.ToByte(dr["FireInspectionOfKeyBuildings"]); 
-            areaInfo.TimeFactor= Convert.ToByte(dr["TimeFactor"]); 
-            areaInfo.EconomicDensity= Convert.ToByte(dr["EconomicDensity"]);
-            areaInfo.HighBuildingsNum= Convert.ToByte(dr["HighBuildingsNum"]); 
-            areaInfo.UndergroundCrowdedSpace= Convert.ToByte(dr["UndergroundCrowdedSpace"]);
-            areaInfo.DensityOfKeyBuildings= Convert.ToByte(dr["DensityOfKeyBuildings"]);
-            areaInfo.RoadCongestion= Convert.ToByte(dr["RoadCongestion"]);
-            areaInfo.BuildingDensity= Convert.ToByte(dr["BuildingDensity"]);
-            areaInfo.DistributionOfInflammableStorage= Convert.ToByte(dr["DistributionOfInflammableStorage"]);
-            areaInfo.FireStationCapacityCoverage= Convert.ToByte(dr["FireStationCapacityCoverage"]);
-            areaInfo.FireStationEquipment= Convert.ToByte(dr["FireStationEquipment"]); 
-            areaInfo.KeyBuildingsFirePreventBuilt= Convert.ToByte(dr["KeyBuildingsFirePreventBuilt"]);
-            areaInfo.AreaUploadTime = Convert.ToDateTime(dr["AreaUploadTime"]);
-            areaInfo.AreaAssessmentYear = Convert.ToUInt32(dr["AreaAssessmentYear"]);
-            areaInfo.AreaRiskGrade= Convert.ToByte(dr["AreaRiskGrade"]);
-            areaInfo.AreaSize = Convert.ToUInt32(dr["AreaSize"]);
-            areaInfo.AreaPop = Convert.ToUInt32(dr["AreaPop"]);
+
+            areaInfo.Attribute = dr["Attribute"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["Attribute"]);
+            areaInfo.PopQuality = dr["PopQuality"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["PopQuality"]);
+            areaInfo.BuildingFireResistanceRating= dr["BuildingFireResistanceRating"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["BuildingFireResistanceRating"]);
+            areaInfo.PopDensity = dr["PopDensity"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["PopDensity"]);
+            areaInfo.BuildingYears = dr["BuildingYears"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["BuildingYears"]);
+            areaInfo.FireSafetyPropaganda= dr["FireSafetyPropaganda"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["FireSafetyPropaganda"]);
+            areaInfo.AgingOfPowerLines = dr["AgingOfPowerLines"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["AgingOfPowerLines"]);
+            areaInfo.FireInspectionOfKeyBuildings= dr["FireInspectionOfKeyBuildings"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["FireInspectionOfKeyBuildings"]); 
+            areaInfo.TimeFactor= dr["TimeFactor"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["TimeFactor"]);
+
+            areaInfo.EconomicDensity= dr["EconomicDensity"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["EconomicDensity"]);
+            areaInfo.HighBuildingsNum= dr["HighBuildingsNum"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["HighBuildingsNum"]); 
+            areaInfo.UndergroundCrowdedSpace= dr["UndergroundCrowdedSpace"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["UndergroundCrowdedSpace"]);
+            areaInfo.DensityOfKeyBuildings= dr["DensityOfKeyBuildings"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["DensityOfKeyBuildings"]);
+            areaInfo.RoadCongestion= dr["RoadCongestion"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["RoadCongestion"]);
+            areaInfo.BuildingDensity= dr["BuildingDensity"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["BuildingDensity"]);
+            areaInfo.DistributionOfInflammableStorage= dr["DistributionOfInflammableStorage"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["DistributionOfInflammableStorage"]);
+            areaInfo.FireStationCapacityCoverage= dr["FireStationCapacityCoverage"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["FireStationCapacityCoverage"]);
+            areaInfo.FireStationEquipment= dr["FireStationEquipment"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["FireStationEquipment"]); 
+            areaInfo.KeyBuildingsFirePreventBuilt= dr["KeyBuildingsFirePreventBuilt"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["KeyBuildingsFirePreventBuilt"]);
+            areaInfo.PublicFireFacilities=dr["PublicFireFacilities"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["PublicFireFacilities"]);
+            areaInfo.FireAndRescuePlan = dr["FireAndRescuePlan"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["FireAndRescuePlan"]);
+            areaInfo.DepartmentalEmergencyResponse= dr["DepartmentalEmergencyResponse"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["DepartmentalEmergencyResponse"]);
+            areaInfo.PowerLineLoad= dr["PowerLineLoad"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["PowerLineLoad"]);
+            areaInfo.FireSafetyManagement= dr["FireSafetyManagement"] == DBNull.Value ? (byte)0 : Convert.ToByte(dr["FireSafetyManagement"]);
+
+            areaInfo.AreaUploadTime = dr["AreaUploadTime"] == DBNull.Value ? DateTime.Now : Convert.ToDateTime(dr["AreaUploadTime"]);
+            areaInfo.AreaAssessmentYear = dr["AreaAssessmentYear"] == DBNull.Value ? 0 : Convert.ToUInt32(dr["AreaAssessmentYear"]);
+            areaInfo.AreaRiskGrade = dr["AreaRiskGrade"] == DBNull.Value ? (byte)0:Convert.ToByte(dr["AreaRiskGrade"]);
+            areaInfo.AreaSize = dr["AreaSize"]== DBNull.Value ? 0:Convert.ToUInt32(dr["AreaSize"]);
+            areaInfo.AreaPop = dr["AreaPop"]==DBNull.Value?0:Convert.ToUInt32(dr["AreaPop"]);
 
             return areaInfo;
         }
