@@ -14,7 +14,7 @@
       <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="AreaInfoUpLoadPage.aspx">
-      <publishTime>01/10/2019 13:50:13</publishTime>
+      <publishTime>01/10/2019 20:49:38</publishTime>
     </File>
     <File Include="bin/ApplicationInsights.config">
       <publishTime>01/02/2019 11:30:11</publishTime>
@@ -92,10 +92,10 @@
       <publishTime>01/10/2019 16:08:38</publishTime>
     </File>
     <File Include="bin/UrbanFireSafetyManagementWeb.dll">
-      <publishTime>01/10/2019 16:08:43</publishTime>
+      <publishTime>01/10/2019 21:33:16</publishTime>
     </File>
     <File Include="CheckAreaInfoPage.aspx">
-      <publishTime>01/10/2019 13:50:13</publishTime>
+      <publishTime>01/10/2019 21:17:05</publishTime>
     </File>
     <File Include="CSS/easyui.css">
       <publishTime>01/02/2019 11:30:11</publishTime>
@@ -137,10 +137,10 @@
       <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="Index.html">
-      <publishTime>01/02/2019 11:30:11</publishTime>
+      <publishTime>01/10/2019 21:28:35</publishTime>
     </File>
     <File Include="MainMaster.Master">
-      <publishTime>01/10/2019 13:56:20</publishTime>
+      <publishTime>01/10/2019 20:09:10</publishTime>
     </File>
     <File Include="packages.config">
       <publishTime>01/02/2019 11:30:11</publishTime>

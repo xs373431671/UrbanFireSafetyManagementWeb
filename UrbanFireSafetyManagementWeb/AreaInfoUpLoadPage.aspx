@@ -177,8 +177,12 @@
             <td class="th3"><input type="text" class="text0-100" name="keyBuildingsFirePreventBuilt" value="0" /></td>
         </tr>
         <tr>
+            <td colspan="3" style="text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;上传评估报告 : <input type="file" name="fileUp" style="margin-left:150px;"/></td>
+            
+        </tr>
+        <tr>
             <td class="th1" style="font-size:medium"> 注&nbsp;&nbsp;&nbsp;&nbsp;意&nbsp;:</td>
-            <td colspan="2" style="text-align:left">打分请填入1-100之间的阿拉伯数字，评分最低为1分，最高为100分，未在评估范围内的指标请打0分!</td>
+            <td colspan="2" style="text-align:left">打分请填入1-100之间的阿拉伯数字，评分最低为1分，最高为100分，未在评估范围内的指标请打0分 ! 文件上传支持格式.txt、.docx、.doc与.pdf文件的上传</td>
         </tr>
     </table>
     <br />

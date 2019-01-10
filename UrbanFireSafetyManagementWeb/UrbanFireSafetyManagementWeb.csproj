@@ -197,6 +197,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="AssessmentReport\" />
     <Folder Include="CSS\icons\" />
     <Folder Include="CSS\images\" />
   </ItemGroup>

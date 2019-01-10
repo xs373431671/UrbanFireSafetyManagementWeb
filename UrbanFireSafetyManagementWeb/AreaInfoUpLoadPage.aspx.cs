@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Web;
@@ -31,6 +32,18 @@ namespace UrbanFireSafetyManagementWeb
 
             if (IsPostBack)
             {
+                HttpPostedFile upFile = Request.Files[0];
+                if(upFile.ContentLength>0)
+                {
+                    string filePath = upFile.FileName;//全路径
+                    string fileName = Path.GetFileName(filePath);
+                    string fileExt = Path.GetExtension(fileName);
+                    if(fileExt==".txt"||fileExt==".docx"||fileExt==".doc"||fileExt==".pdf")
+                    {
+                        upFile.SaveAs(Request.MapPath("/AssessmentReport/" + DateTime.Now.Year.ToString()+"_Area_"+NormalUser.AreaNum+fileExt));
+                    }                    
+                }
+
                 AreaInfo area = new AreaInfo();
                 area.AreaNum = Convert.ToUInt32(NormalUser.AreaNum);
                 area.Attribute = Convert.ToByte(Request.Form["attribute"]);
@@ -42,6 +55,8 @@ namespace UrbanFireSafetyManagementWeb
                 area.AgingOfPowerLines = Convert.ToByte(Request.Form["agingOfPowerLines"]);
                 area.FireInspectionOfKeyBuildings = Convert.ToByte(Request.Form["fireInspectionOfKeyBuildings"]);
                 area.TimeFactor = 0;
+                area.FireSafetyPropaganda = Convert.ToByte(Request.Form["fireSafetyPropaganda"]);
+                area.PowerLineLoad = Convert.ToByte(Request.Form["powerLineLoad"]);
                 area.EconomicDensity = Convert.ToByte(Request.Form["economicDensity"]);
                 area.HighBuildingsNum = Convert.ToByte(Request.Form["highBuildingsNum"]);
                 area.UndergroundCrowdedSpace = Convert.ToByte(Request.Form["undergroundCrowdedSpace"]);

@@ -169,7 +169,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" enctype="multipart/form-data">
     <div id="mainDiv">
         <div id="topDiv">
             <a id="exit">退出当前登录</a>

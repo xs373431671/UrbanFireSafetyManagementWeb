@@ -199,6 +199,9 @@
             <td class="th2">地区重点防火单位监督情况</td>
             <td class="th3"><%=Area.FireInspectionOfKeyBuildings %></td>
         </tr>
+        <tr>
+            <td colspan="3"><%= fileExist%></td>           
+        </tr>
     </table>
     <br />
     <br />

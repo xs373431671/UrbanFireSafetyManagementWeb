@@ -60,6 +60,11 @@ namespace UrbanFireSafetyManagementWeb
             UserInfo signUser = userInfoService.CheckUserInfo(user, out returnMessage);
             try
             {
+                if(signUser.Authority=="admin")
+                {
+                    context.Response.Write("<script>alert('" + "登录失败，您的权限为管理员权限，此系统仅允许普通权限工作人员登录！" + "');window.location = 'Index.html';</script>");
+                    return;
+                }
                 if (signUser.ID > 0)
                 {
                     context.Session["userInfo"] = signUser;
