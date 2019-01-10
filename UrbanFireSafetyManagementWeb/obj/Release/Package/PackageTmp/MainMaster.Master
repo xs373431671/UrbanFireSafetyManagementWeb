@@ -186,17 +186,17 @@
             <span  style="float:right; margin-top:20px;font-size:x-small;color:lawngreen;">此网站仅用于个人科研用途</span>
         </div>
 
-        <div id="topSpace"></div>
+        <%--<div id="topSpace"></div>--%>
 
-        <div id="sonMainDiv">                   
+       <%-- <div id="sonMainDiv">      --%>             
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">        
             </asp:ContentPlaceHolder>
-        </div>
+        <%--</div>--%>
 
         <div id="bottomSpace"></div>
        
         <div id="footBar">
-            <span id="footSpan" style="margin-left:150px">|&nbsp;&nbsp;2018——2019&nbsp;&nbsp;|&nbsp;&nbsp;版权所有：太原理工大学安全与应急救援工程学院&nbsp;&nbsp;|&nbsp;&nbsp;备案号：晋ICP备18010110号&nbsp;&nbsp;|&nbsp;&nbsp;技术责任：薛嵩&nbsp;&nbsp;|</span>          
+            <span id="footSpan" style="margin-left:150px">|&nbsp;&nbsp;2018——2019&nbsp;&nbsp;|&nbsp;&nbsp;版权所有：太原理工大学安全与应急管理工程学院&nbsp;&nbsp;|&nbsp;&nbsp;备案号：晋ICP备18010110号&nbsp;&nbsp;|&nbsp;&nbsp;技术责任：薛嵩&nbsp;&nbsp;|</span>          
         </div>
     </div>
     </form>

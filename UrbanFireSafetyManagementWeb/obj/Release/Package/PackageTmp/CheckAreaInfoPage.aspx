@@ -30,6 +30,7 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div id="sonMainDiv">   
     <h2 style="text-align:center"><%= NormalUser.AreaNum%>号地区消防云端数据库信息表</h2>
     <h3 style="text-align:center">主要信息表（<%=returnMessage %>）</h3>
     <table border="1">
@@ -203,6 +204,7 @@
     <br />
     <br />
     <br />
+        </div>
    
 </asp:Content>
 

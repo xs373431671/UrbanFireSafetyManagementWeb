@@ -52,6 +52,7 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div id="sonMainDiv">   
     <h2 style="text-align:center">欢迎使用火灾风险指标评分录入系统</h2>
     <span style="margin-left:250px;">您负责的区域为：<%= NormalUser.AreaNum%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=ReturnMessage%></span>
     <table border="1">
@@ -187,4 +188,5 @@
     </div>
     <br />
     <br />
+        </div>
 </asp:Content>

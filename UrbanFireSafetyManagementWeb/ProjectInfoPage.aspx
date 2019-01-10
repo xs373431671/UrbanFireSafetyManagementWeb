@@ -40,6 +40,7 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div id="sonMainDiv">   
     <div id="textDiv">   
         <h1>项目简介</h1>
         <h2>一.立项依据</h2>
@@ -95,5 +96,6 @@
         <p>为了实现本项目的研究目标，项目方案如下：（1）首先结合双重预防机制与网格化管理理念，对城市火灾消防安全管理体系进行研究，研究内容包括城市区域火灾风险分级管控、隐患排查治理、城市消防设施数字化管 理、消防知识数字化宣传；（2）基于城市火灾消防安全管理体系研究，以.NET Framwork为开发平台，开发智慧城市火灾安全管理系统客户端，实现火灾风险指标信息的上传录入、城市消防设施信息的上传录入与建立消防 知识宣传模块；（3）基于SQL Server数据库技术，建立云端消防空间信息数据库，实现客户端或传感器信息的上传录入与查询调取；（4）基于城市火灾消防安全管理体系研究，开发智慧城市火灾安全管理系统服务端，进  行大数据处理编程，对数据库中数据进行数据挖掘，建立数据处理层，同时对ArcGIS Engine进行二次开发，实现数据处理的空间可视化，最终实现实现方法与系统的配套使用。（5）对项目成果进行区域应用，并与传统消  防安全管理工作进行分析和对比，并得出相应的结论。</p>
         <span class="textSpan">系统框架如下图2所示:</span><br /><br />
         <img class="ProjImage" style="width:500px;margin-left:250px;" src="image/TiXi.png" />
-    </div>   
+    </div> 
+        </div>  
 </asp:Content>

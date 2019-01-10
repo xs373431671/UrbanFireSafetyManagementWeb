@@ -99,6 +99,10 @@
     <Content Include="image\TittleImage.png" />
     <Content Include="image\TittleImage2.jpg" />
     <Content Include="image\TiXi.png" />
+    <Content Include="image\任务发布.png" />
+    <Content Include="image\区域划分1.png" />
+    <Content Include="image\指标量化.png" />
+    <Content Include="image\联系我们1.png" />
     <Content Include="Index.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">

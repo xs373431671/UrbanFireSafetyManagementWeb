@@ -11,34 +11,34 @@
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="AreaInfoUpLoadPage.aspx">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/10/2019 13:50:13</publishTime>
     </File>
     <File Include="bin/ApplicationInsights.config">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.DependencyCollector.dll">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/02/2019 11:30:12</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Web.dll">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/02/2019 11:30:12</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.WindowsServer.dll">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/02/2019 11:30:12</publishTime>
     </File>
     <File Include="bin/Microsoft.ApplicationInsights.dll">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>06/15/2015 02:06:24</publishTime>
@@ -80,88 +80,100 @@
       <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/UFSM_BusinessLogicLayer.dll">
-      <publishTime>12/29/2018 20:33:05</publishTime>
+      <publishTime>01/10/2019 16:08:38</publishTime>
     </File>
     <File Include="bin/UFSM_DataAccessLayer.dll">
-      <publishTime>12/29/2018 20:33:04</publishTime>
+      <publishTime>01/10/2019 16:08:38</publishTime>
     </File>
     <File Include="bin/UFSM_Model.dll">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/10/2019 16:08:38</publishTime>
     </File>
     <File Include="bin/UFSM_Tool.dll">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/10/2019 16:08:38</publishTime>
     </File>
     <File Include="bin/UrbanFireSafetyManagementWeb.dll">
-      <publishTime>12/29/2018 21:10:37</publishTime>
+      <publishTime>01/10/2019 16:08:43</publishTime>
     </File>
     <File Include="CheckAreaInfoPage.aspx">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/10/2019 13:50:13</publishTime>
     </File>
     <File Include="CSS/easyui.css">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="CSS/icon.css">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="HomePage.aspx">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/10/2019 16:08:35</publishTime>
     </File>
     <File Include="image/JiShuLuXian.png">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="image/TittleImage.png">
-      <publishTime>12/29/2018 21:09:00</publishTime>
+      <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="image/TittleImage1.png">
       <publishTime>12/29/2018 20:47:34</publishTime>
     </File>
     <File Include="image/TittleImage2.jpg">
-      <publishTime>12/29/2018 20:54:19</publishTime>
+      <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="image/TiXi.png">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/02/2019 11:30:11</publishTime>
+    </File>
+    <File Include="image/任务发布.png">
+      <publishTime>01/09/2019 22:22:39</publishTime>
+    </File>
+    <File Include="image/区域划分1.png">
+      <publishTime>01/10/2019 14:39:27</publishTime>
+    </File>
+    <File Include="image/指标量化.png">
+      <publishTime>01/09/2019 22:00:20</publishTime>
+    </File>
+    <File Include="image/联系我们1.png">
+      <publishTime>01/10/2019 14:46:14</publishTime>
     </File>
     <File Include="Index.ashx">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="Index.html">
-      <publishTime>12/29/2018 20:35:42</publishTime>
+      <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="MainMaster.Master">
-      <publishTime>12/29/2018 21:10:33</publishTime>
+      <publishTime>01/10/2019 13:56:20</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="PersonInfoPage.aspx">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/10/2019 13:54:17</publishTime>
     </File>
     <File Include="ProjectInfoPage.aspx">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/10/2019 13:54:17</publishTime>
     </File>
     <File Include="Register.ashx">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="Register.html">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="scripts/jquery-1.7.1.min.js">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="scripts/jquery.easyui.min.js">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="SignIn.ashx">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="Test.aspx">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="ValidateImageCode.ashx">
-      <publishTime>12/29/2018 20:31:43</publishTime>
+      <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>12/29/2018 20:43:01</publishTime>
+      <publishTime>01/10/2019 16:08:57</publishTime>
     </File>
   </ItemGroup>
 </Project>

@@ -107,6 +107,7 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div id="sonMainDiv">   
     <br />
     <br />
     <h2 style="text-align:center">用户个人信息</h2>
@@ -196,6 +197,6 @@
             </tr>           
         </table>       
     </div>   
-
+</div>
 
 </asp:Content>

@@ -186,12 +186,12 @@
             <span  style="float:right; margin-top:20px;font-size:x-small;color:lawngreen;">此网站仅用于个人科研用途</span>
         </div>
 
-        <div id="topSpace"></div>
+        <%--<div id="topSpace"></div>--%>
 
-        <div id="sonMainDiv">                   
+       <%-- <div id="sonMainDiv">      --%>             
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">        
             </asp:ContentPlaceHolder>
-        </div>
+        <%--</div>--%>
 
         <div id="bottomSpace"></div>
        
