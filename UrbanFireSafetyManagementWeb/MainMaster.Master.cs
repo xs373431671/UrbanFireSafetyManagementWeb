@@ -29,7 +29,7 @@ namespace UrbanFireSafetyManagementWeb
             //    Session.Timeout = 30;
             //}
             //判断用户cookie["userInfo"]是否存在
-            if (Request.Cookies["userInfo"] != null)
+            if (Request.Cookies["userInfo"]["AreaNum"] != null)
             {
                 
             }
