@@ -1,0 +1,99 @@
+class Program
+    {
+        //public static int[,] a = { { 1, 2, 4, 3, 5, 7, 6, 8, 9 }, 
+        //             { 8, 1, 9, 6, 3, 4, 5, 2, 7 }, 
+        //             { 2, 4, 9, 6, 5, 8, 1, 3, 7 }, 
+        //             { 6, 3, 8, 2, 1, 5, 9, 4, 7 }, 
+        //             { 4, 2, 7, 3, 1, 6, 9, 8, 5 } };
+        public static int[,] a = { { 6,1,4,5,2,3 },
+                     { 5,2,3,6,4,1 },
+                     { 4,3,5,6,1,2 },
+                     { 3,2,6,5,4,1 },
+                     {3,1,4,6,5,2} };
+
+        /// <summary>
+        /// 求“典型排序”矩阵的隶属度矩阵，a的i为指标，j为专家
+        /// </summary>
+        /// <param name="a"></param>
+        /// <returns></returns>
+        public static double[,] LiShuDuJuXhen(int[,] a)
+        {
+            int m = a.GetLength(1)+2; //获取“典型排序”矩阵列数,m=9+2
+            double[,] b = new double[a.GetLength(0), a.GetLength(1)];
+            for(int i=0;i<a.GetLength(0); i++)
+            {
+                for(int j=0;j<a.GetLength(1);j++)
+                {
+                    b[i, j] = (Math.Log(m - a[i, j]) / Math.Log(m - 1));
+                    
+                }
+            }
+            return b;           
+        }
+
+
+
+        static void Main(string[] args)
+        {
+            //得到隶属矩阵
+            double[,] b = LiShuDuJuXhen(a);
+
+            //计算平均认识度p
+            double[] p = new double[b.GetLength(1)];
+            for(int i=0;i<b.GetLength(1);i++)
+            {
+                double z = 0;
+                for(int j=0;j<b.GetLength(0);j++)
+                {
+                    z = z + b[j, i];
+                }
+                p[i] = z / b.GetLength(0);
+            }
+
+            //计算认识盲度
+            double[] r = new double[b.GetLength(1)];
+            for (int i = 0; i < b.GetLength(1); i++)
+            {
+                double z = 0;
+                double maxb = 0;
+                double minb = 99;
+                for (int j = 0; j < b.GetLength(0); j++)
+                {
+                    if(maxb<b[j,i])
+                    {
+                        maxb = b[j, i];
+                    }
+                    if(minb>b[j,i])
+                    {
+                        minb = b[j, i];
+                    }
+                }
+                Console.WriteLine(maxb+","+minb+","+p[i]);
+                z = Math.Abs((maxb - p[i]) + ( minb-p[i] )) / 2;
+                r[i] = z ;               
+            }
+
+            //计算总体认识度
+            double[] zt = new double[b.GetLength(1)];
+            for (int i = 0; i < b.GetLength(1); i++)
+            {
+                zt[i] = p[i] * (1 - r[i]);
+                Console.WriteLine(zt[i]);
+            }
+
+            //归一化处理
+            double[] g = new double[b.GetLength(1)];
+            for (int i=0;i<b.GetLength(1);i++)
+            {
+                double a = 0;
+                foreach (double j in zt)
+                {
+                    a = a + j;
+                }
+                g[i] = zt[i] / a;
+                Console.WriteLine(g[i]);
+            }
+
+            Console.Read();
+        }
+    }

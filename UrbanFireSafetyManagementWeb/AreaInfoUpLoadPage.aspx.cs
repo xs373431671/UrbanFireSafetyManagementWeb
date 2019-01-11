@@ -28,7 +28,9 @@ namespace UrbanFireSafetyManagementWeb
         protected void Page_Load(object sender, EventArgs e)
         {
             ReturnMessage = string.Empty;
-            NormalUser = (UserInfo)Session["userInfo"];   //实际项目中从session中获取*********************************************** 
+            //NormalUser = (UserInfo)Session["userInfo"];   //实际项目中从session中获取
+            NormalUser = new UserInfo();
+            NormalUser.AreaNum =int.Parse(Server.HtmlEncode(Request.Cookies["userInfo"]["AreaNum"]));
 
             if (IsPostBack)
             {

@@ -44,7 +44,48 @@ namespace UrbanFireSafetyManagementWeb
             return isSucess;
         }
 
+        ////验证用户session版
+        //protected void CheckUserInfo(HttpContext context)
+        //{
+        //    UserInfo user = new UserInfo();
+        //    //获取用户输入的用户名和密码.       
+        //    user.Account = context.Request.Form["account"];
+        //    user.Password = context.Request.Form["password"];
 
+        //    //校验用户名密码.             
+        //    UserInfoService userInfoService = new UserInfoService();
+        //    string returnMessage = string.Empty;
+
+        //    //判断用户名与密码
+        //    UserInfo signUser = userInfoService.CheckUserInfo(user, out returnMessage);
+        //    try
+        //    {
+        //        if(signUser.Authority=="admin")
+        //        {
+        //            context.Response.Write("<script>alert('" + "登录失败，您的权限为管理员权限，此系统仅允许普通权限工作人员登录！" + "');window.location = 'Index.html';</script>");
+        //            return;
+        //        }
+        //        if (signUser.ID > 0)
+        //        {
+        //            context.Session["userInfo"] = signUser;
+        //            context.Response.Write("<script>alert('" + "登录成功！" + "');window.location = 'HomePage.aspx';</script>");
+        //        }
+        //        else
+        //        {
+        //            context.Response.Write("<script>alert('" + "帐号或密码错误！" + "');window.location = 'Index.html';</script>");
+        //        }
+        //    }
+        //    catch
+        //    {
+        //        context.Response.Write("<script>alert('" + "帐号或密码错误！" + "');window.location = 'Index.html';</script>");
+        //    }           
+        // }
+
+
+        /// <summary>
+        /// 验证用户密码（cookie版）
+        /// </summary>
+        /// <param name="context"></param>
         protected void CheckUserInfo(HttpContext context)
         {
             UserInfo user = new UserInfo();
@@ -60,14 +101,17 @@ namespace UrbanFireSafetyManagementWeb
             UserInfo signUser = userInfoService.CheckUserInfo(user, out returnMessage);
             try
             {
-                if(signUser.Authority=="admin")
+                if (signUser.Authority == "admin")
                 {
                     context.Response.Write("<script>alert('" + "登录失败，您的权限为管理员权限，此系统仅允许普通权限工作人员登录！" + "');window.location = 'Index.html';</script>");
                     return;
                 }
                 if (signUser.ID > 0)
                 {
-                    context.Session["userInfo"] = signUser;
+                    context.Response.Cookies["userInfo"]["Account"] = signUser.Account;
+                    context.Response.Cookies["userInfo"]["AreaNum"] = signUser.AreaNum.ToString();
+                    context.Response.Cookies["userInfo"]["Password"] = signUser.Password;
+                    
                     context.Response.Write("<script>alert('" + "登录成功！" + "');window.location = 'HomePage.aspx';</script>");
                 }
                 else
@@ -78,8 +122,8 @@ namespace UrbanFireSafetyManagementWeb
             catch
             {
                 context.Response.Write("<script>alert('" + "帐号或密码错误！" + "');window.location = 'Index.html';</script>");
-            }           
-         }
+            }
+        }
 
         public bool IsReusable
         {

@@ -14,10 +14,15 @@ namespace UrbanFireSafetyManagementWeb
         public UserInfo WorkUser { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            WorkUser = (UserInfo)Session["userInfo"];
+            UserInfo userCookie = new UserInfo();
+            userCookie.Account = Request.Cookies["userInfo"]["Account"];
+            userCookie.Password = Request.Cookies["userInfo"]["Password"];
+            string returnMessage2 = string.Empty;
+            WorkUser = new UserInfo();
+            WorkUser = new UserInfoService().CheckUserInfo(userCookie, out returnMessage2);
             if (IsPostBack)
             {
-                UserInfo user = (UserInfo)Session["userInfo"];
+                UserInfo user = WorkUser;
                 UserInfoService userService = new UserInfoService();
                 string returnMessage = string.Empty;
                 
@@ -29,7 +34,8 @@ namespace UrbanFireSafetyManagementWeb
 
                 if (userService.ChangeUserInfo(user, out returnMessage))
                 {
-                    Session["userInfo"] = user;
+                    //Session["userInfo"] = user;
+                    
                     Response.Write("<script>alert('" + returnMessage + "');window.location = 'PersonInfoPage.aspx';</script>");
                 }
                 else

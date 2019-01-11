@@ -92,7 +92,7 @@
       <publishTime>01/10/2019 16:08:38</publishTime>
     </File>
     <File Include="bin/UrbanFireSafetyManagementWeb.dll">
-      <publishTime>01/10/2019 21:33:16</publishTime>
+      <publishTime>01/11/2019 13:38:14</publishTime>
     </File>
     <File Include="CheckAreaInfoPage.aspx">
       <publishTime>01/10/2019 21:17:05</publishTime>
@@ -173,7 +173,7 @@
       <publishTime>01/02/2019 11:30:11</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>01/10/2019 16:08:57</publishTime>
+      <publishTime>01/11/2019 13:42:44</publishTime>
     </File>
   </ItemGroup>
 </Project>

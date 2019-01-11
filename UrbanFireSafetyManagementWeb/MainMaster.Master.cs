@@ -19,14 +19,23 @@ namespace UrbanFireSafetyManagementWeb
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            //判断用户Session["userInfo"]是否存在
-            if (Session["userInfo"] == null)
+            ////判断用户Session["userInfo"]是否存在
+            //if (Session["userInfo"] == null)
+            //{
+            //    Response.Redirect("Index.html");
+            //}
+            //else
+            //{
+            //    Session.Timeout = 30;
+            //}
+            //判断用户cookie["userInfo"]是否存在
+            if (Request.Cookies["userInfo"] != null)
             {
-                Response.Redirect("Index.html");
+                
             }
             else
             {
-                Session.Timeout = 30;
+                Response.Redirect("Index.html");
             }
         }
     }
